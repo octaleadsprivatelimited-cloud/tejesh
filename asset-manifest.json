@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tejesh/static/css/main.ee440ba3.css",
+    "main.js": "/tejesh/static/js/main.2bdc1c8a.js",
+    "static/js/453.eb570f4f.chunk.js": "/tejesh/static/js/453.eb570f4f.chunk.js",
+    "index.html": "/tejesh/index.html",
+    "main.ee440ba3.css.map": "/tejesh/static/css/main.ee440ba3.css.map",
+    "main.2bdc1c8a.js.map": "/tejesh/static/js/main.2bdc1c8a.js.map",
+    "453.eb570f4f.chunk.js.map": "/tejesh/static/js/453.eb570f4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee440ba3.css",
+    "static/js/main.2bdc1c8a.js"
+  ]
+}
