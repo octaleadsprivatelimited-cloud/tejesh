@@ -262,7 +262,7 @@ const Portfolio = () => {
           </div>
 
           {/* Portfolio Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {filteredPortfolio.map((project) => (
               <div
                 key={project.id}
@@ -278,7 +278,7 @@ const Portfolio = () => {
                   <img
                     src="/tp-logo.png"
                     alt="Tejesh Profine Logo"
-                    className="absolute left-4 top-4 h-20 w-20 object-contain drop-shadow-lg"
+                    className="absolute left-2 top-2 md:left-4 md:top-4 h-12 w-12 md:h-20 md:w-20 object-contain drop-shadow-lg"
                     loading="lazy"
                   />
                 </div>

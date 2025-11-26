@@ -27,9 +27,9 @@ const CommercialProjects = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(10).jpeg"
                   alt="Commercial Project Chittor"
@@ -37,14 +37,14 @@ const CommercialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Office Complex in Chittor</h3>
-                <p className="text-gray-600">Modern uPVC windows and facade for a corporate office building in Chittor District.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Office Complex in Chittor</h3>
+                <p className="text-xs md:text-base text-gray-600">Modern uPVC windows and facade for a corporate office building in Chittor District.</p>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(11).jpeg"
                   alt="Commercial Project Tirupathi"
@@ -52,14 +52,14 @@ const CommercialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Commercial Building Tirupathi</h3>
-                <p className="text-gray-600">Complete Kommerling uPVC windows solutions for commercial property in Tirupathi.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Commercial Building Tirupathi</h3>
+                <p className="text-xs md:text-base text-gray-600">Complete Kommerling uPVC windows solutions for commercial property in Tirupathi.</p>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(12).jpeg"
                   alt="Commercial Project Chittor District"
@@ -67,9 +67,9 @@ const CommercialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Retail Store</h3>
-                <p className="text-gray-600">Premium uPVC windows and doors for a retail store in Chittor District.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Retail Store</h3>
+                <p className="text-xs md:text-base text-gray-600">Premium uPVC windows and doors for a retail store in Chittor District.</p>
               </div>
             </div>
           </div>

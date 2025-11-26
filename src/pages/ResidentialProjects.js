@@ -27,9 +27,9 @@ const ResidentialProjects = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png"
                   alt="Residential Project Chittor"
@@ -37,14 +37,14 @@ const ResidentialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Luxury Villa Project</h3>
-                <p className="text-gray-600">Complete uPVC windows and doors installation for a luxury villa in Chittor District.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Luxury Villa Project</h3>
+                <p className="text-xs md:text-base text-gray-600">Complete uPVC windows and doors installation for a luxury villa in Chittor District.</p>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/tejesh profine.jpg"
                   alt="Residential Project Tirupathi"
@@ -52,14 +52,14 @@ const ResidentialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Modern Home in Tirupathi</h3>
-                <p className="text-gray-600">Premium uPVC windows installation for modern residential property in Tirupathi.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Modern Home in Tirupathi</h3>
+                <p className="text-xs md:text-base text-gray-600">Premium uPVC windows installation for modern residential property in Tirupathi.</p>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-64 flex items-center justify-center bg-gray-100">
+              <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/tejesh profine chittor.jpg"
                   alt="Residential Project Chittor District"
@@ -67,9 +67,9 @@ const ResidentialProjects = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Modern Home Renovation</h3>
-                <p className="text-gray-600">Complete renovation with uPVC windows and doors in Chittor District.</p>
+              <div className="p-3 md:p-6">
+                <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Modern Home Renovation</h3>
+                <p className="text-xs md:text-base text-gray-600">Complete renovation with uPVC windows and doors in Chittor District.</p>
               </div>
             </div>
           </div>

@@ -41,14 +41,19 @@ const Header = () => {
       <div className="container-custom relative">
         <div className="flex justify-between items-center py-1">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="h-10 overflow-hidden flex items-start">
               <img 
                 src="/tp-logo.png"
                 alt="Tejesh Profine Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-10 md:h-12 w-auto object-contain"
                 style={{ marginTop: '-2px' }}
               />
+            </div>
+            <div className="flex-shrink-0">
+              <h1 className="text-sm md:text-lg lg:text-xl font-semibold text-gray-900 whitespace-nowrap">
+                Tejesh Profine
+              </h1>
             </div>
           </Link>
 
