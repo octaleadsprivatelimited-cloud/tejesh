@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "build",
+  "devCommand": "npm start",
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "create-react-app",
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/gallery/(.*)",
+      "dest": "/gallery/$1"
+    },
+    {
+      "src": "/tp-logo.png",
+      "dest": "/tp-logo.png"
+    },
+    {
+      "src": "/v.venktesulu.png",
+      "dest": "/v.venktesulu.png"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+
