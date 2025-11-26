@@ -50,7 +50,7 @@ const UPVCWindows = () => {
       <SEO 
         title="Premium uPVC Windows Chittor | Kommerling uPVC Windows Tirupathi | Energy Efficient"
         description="Best uPVC windows in Chittor by Tejesh Profine. Authorized Kommerling partner offering energy-efficient, weather-resistant uPVC windows for homes & offices in Tirupathi. 30% energy savings, 10-year warranty. Free installation quote +91 9949360406"
-        keywords="uPVC windows Hyderabad, uPVC windows Bangalore, uPVC windows Visakhapatnam, Kommerling uPVC windows Tirupati, energy efficient uPVC windows Vijayawada, double glazed uPVC windows Mysuru, soundproof uPVC windows Warangal, premium uPVC window supplier Andhra Pradesh, tilt and turn uPVC windows Bengaluru, sliding uPVC windows Secunderabad"
+        keywords="uPVC windows Tirupathi, uPVC windows Chittor, uPVC windows Kadapa, uPVC windows Andhra Pradesh, uPVC windows Chittoor, Kommerling uPVC windows Tirupathi, energy efficient uPVC windows Chittor, double glazed uPVC windows Kadapa, soundproof uPVC windows Tirupathi, premium uPVC window supplier Andhra Pradesh, tilt and turn uPVC windows Chittor, sliding uPVC windows Tirupathi, uPVC windows Rayachoti, uPVC windows Madanapalle"
         url="https://tejeshprofine.com/upvc-windows"
         schema={{
           "@context": "https://schema.org",

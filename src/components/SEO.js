@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet-async';
 const SEO = ({ 
   title = "Tejesh Profine - #1 uPVC Windows & Aluminium Doors in Chittor, Tirupathi | Kommerling Partner",
   description = "Tejesh Profine - #1 uPVC Windows & Aluminium Doors in Chittor, Tirupathi. Established 2025. Premium Kommerling uPVC windows, energy-efficient aluminium doors. Free quotes, expert installation across Chittor District. Call +91 9949360406",
-  keywords = "uPVC windows Chittor, aluminium windows Tirupathi, uPVC doors Chittor District, aluminium doors Tirupathi, Kommerling uPVC windows, sliding systems Chittor, facade solutions Tirupathi, windows and doors Chittor, energy efficient windows Tirupathi, uPVC windows near me, aluminium windows Chittor, best uPVC windows Tirupathi, premium windows Chittor District, window installation Chittor, door installation Tirupathi, Tejesh Profine",
-  ogImage = "/og-image.jpg",
+  keywords = "uPVC windows Tirupathi, uPVC doors Tirupathi, aluminium windows Tirupathi, aluminium doors Tirupathi, uPVC windows Chittor, uPVC doors Chittor, uPVC windows Kadapa, uPVC doors Kadapa, uPVC windows Andhra Pradesh, uPVC doors Andhra Pradesh, Kommerling uPVC windows Tirupathi, sliding systems Chittor, facade solutions Tirupathi, windows and doors Chittor, energy efficient windows Tirupathi, uPVC windows near me, aluminium windows Chittor, best uPVC windows Tirupathi, premium windows Chittor District, window installation Chittor, door installation Tirupathi, uPVC windows Chittoor, uPVC doors Chittoor, Tejesh Profine, uPVC windows Rayachoti, uPVC doors Rayachoti, uPVC windows Madanapalle, uPVC doors Madanapalle",
+  ogImage = "/gallery/tejesh profine chittor kommerling.jpg",
   url = "https://tejeshprofine.com",
   type = "website",
   schema = null
@@ -32,13 +32,13 @@ const SEO = ({
     },
     "openingHours": "Mo-Sa 09:00-18:00",
     "priceRange": "$$",
-    "image": "https://tejeshprofine.com/og-image.jpg",
+    "image": "https://tejeshprofine.com/gallery/tejesh profine chittor kommerling.jpg",
     "founder": {
       "@type": "Person",
       "name": "V. Venkatesulu"
     },
     "foundingDate": "2025",
-    "areaServed": ["Chittor District", "Tirupathi", "Andhra Pradesh"]
+    "areaServed": ["Tirupathi", "Chittor District", "Kadapa", "Chittoor", "Rayachoti", "Madanapalle", "Andhra Pradesh", "Renigunta", "Chandragiri", "Srikalahasti"]
   };
 
   return (

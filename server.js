@@ -65,42 +65,42 @@ app.get('/api/services', (req, res) => {
       id: 1,
       title: "uPVC Windows",
       description: "Premium quality uPVC windows with excellent thermal insulation and durability.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(1).jpeg",
+      image: "/gallery/upvc windows andhra pradesh kommerling (1).jpeg",
       features: ["Energy Efficient", "Weather Resistant", "Low Maintenance", "Custom Sizes"]
     },
     {
       id: 2,
       title: "Aluminium Windows",
       description: "Modern aluminium windows combining strength, elegance, and longevity.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(5).jpeg",
+      image: "/gallery/upvc windows andhra pradesh kommerling (5).jpeg",
       features: ["Durable", "Corrosion Resistant", "Modern Design", "High Security"]
     },
     {
       id: 3,
       title: "uPVC Doors",
       description: "Secure and stylish uPVC doors for residential and commercial properties.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(6).jpeg",
+      image: "/gallery/Premium uPVC Doors .jpeg",
       features: ["High Security", "Weather Proof", "Customizable", "Long Lasting"]
     },
     {
       id: 4,
       title: "Aluminium Doors",
       description: "Premium aluminium doors offering superior strength and contemporary aesthetics.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(7).jpeg",
+      image: "/gallery/upvc windows andhra pradesh kommerling (7).jpeg",
       features: ["Maximum Security", "Modern Look", "Fire Resistant", "Easy Maintenance"]
     },
     {
       id: 5,
       title: "Sliding Systems",
       description: "Smooth and space-efficient sliding door and window systems.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(8).jpeg",
+      image: "/gallery/upvc windows andhra pradesh kommerling (8).jpeg",
       features: ["Space Saving", "Smooth Operation", "Weather Sealed", "Customizable"]
     },
     {
       id: 6,
       title: "Facade Solutions",
       description: "Complete facade solutions for modern architectural requirements.",
-      image: "/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(9).jpeg",
+      image: "/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png",
       features: ["Architectural Design", "Energy Efficient", "Weather Resistant", "Custom Solutions"]
     }
   ];
@@ -193,6 +193,18 @@ app.get('/robots.txt', (req, res) => {
 app.get('/.well-known/security.txt', (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.sendFile(path.join(__dirname, 'public', '.well-known', 'security.txt'));
+});
+
+// Serve local business schema
+app.get('/local-business-schema.json', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.sendFile(path.join(__dirname, 'public', 'local-business-schema.json'));
+});
+
+// Serve BingSiteAuth.xml
+app.get('/BingSiteAuth.xml', (req, res) => {
+  res.setHeader('Content-Type', 'application/xml');
+  res.sendFile(path.join(__dirname, 'public', 'BingSiteAuth.xml'));
 });
 
 // Catch all handler: send back React's index.html file for any non-API routes

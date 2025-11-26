@@ -8,13 +8,13 @@ const Home = () => {
   const features = [
     {
       icon: FaShieldAlt,
-      title: "Premium Kommerling uPVC Windows",
-      description: "We deploy certified Kommerling systems and advanced fabrication to deliver long-lasting performance across Andhra Pradesh, Karnataka, and Telangana."
+      title: "Premium Kommerling uPVC Windows Tirupathi",
+      description: "We deploy certified Kommerling uPVC windows in Tirupathi, Chittor, Kadapa, and across Andhra Pradesh with advanced fabrication for long-lasting performance."
     },
     {
       icon: FaTools,
-      title: "Expert Installation Teams",
-      description: "Our certified technicians handle complex uPVC and aluminium installations with precision in metros and tier-2 cities throughout South India."
+      title: "Expert uPVC Installation Teams Tirupathi",
+      description: "Our certified technicians handle complex uPVC windows and aluminium doors installations with precision in Tirupathi, Chittor, Kadapa, Chittoor, and surrounding areas."
     },
     {
       icon: FaAward,
@@ -39,10 +39,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "500+", label: "Kommerling Installations Across Andhra Pradesh" },
-    { number: "2025", label: "Serving South India Since" },
-    { number: "1000+", label: "Happy Customers in AP, KA & TS" },
-    { number: "24/7", label: "Dedicated Support Across the Tri-State Region" }
+    { number: "500+", label: "uPVC Windows Installed in Tirupathi & Chittor" },
+    { number: "2025", label: "Serving Andhra Pradesh Since" },
+    { number: "1000+", label: "Happy Customers in Tirupathi, Kadapa & Chittoor" },
+    { number: "24/7", label: "Support Across Andhra Pradesh" }
   ];
 
   return (
