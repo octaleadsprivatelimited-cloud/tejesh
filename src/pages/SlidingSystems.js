@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWatermark from '../components/ImageWatermark';
 
 const SlidingSystems = () => {
   return (
@@ -28,13 +29,14 @@ const SlidingSystems = () => {
                 <p>Featuring advanced hardware, weather sealing, and customizable designs to meet your specific needs.</p>
               </div>
             </div>
-            <div>
+            <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(20).jpeg"
                 alt="Premium Sliding Systems Chittor"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
+              <ImageWatermark className="rounded-b-xl" />
             </div>
           </div>
         </div>

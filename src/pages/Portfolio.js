@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaFilter } from 'react-icons/fa';
+import ImageWatermark from '../components/ImageWatermark';
 
 const Portfolio = () => {
   const residentialFeatures = [
@@ -268,19 +269,14 @@ const Portfolio = () => {
                 key={project.id}
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative flex items-center justify-center bg-gray-100">
+                <div className="relative flex items-center justify-center bg-gray-100 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-auto max-h-[520px] object-contain"
                     loading="lazy"
                   />
-                  <img
-                    src="/tp-logo.png"
-                    alt="Tejesh Profine Logo"
-                    className="absolute left-2 top-2 md:left-4 md:top-4 h-12 w-12 md:h-20 md:w-20 object-contain drop-shadow-lg"
-                    loading="lazy"
-                  />
+                  <ImageWatermark />
                 </div>
               </div>
             ))}

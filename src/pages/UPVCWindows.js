@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaCheck, FaShieldAlt, FaLeaf, FaThermometerHalf, FaVolumeMute, FaEye, FaTools } from 'react-icons/fa';
 import SEO from '../components/SEO';
+import ImageWatermark from '../components/ImageWatermark';
 
 const UPVCWindows = () => {
   const features = [
@@ -113,13 +114,14 @@ const UPVCWindows = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(4).jpeg"
                 alt="uPVC Windows Chittor - Kommerling"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
+              <ImageWatermark className="rounded-b-xl" />
             </div>
           </div>
         </div>
@@ -248,6 +250,7 @@ const UPVCWindows = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900">Residential Application</h3>
@@ -263,6 +266,7 @@ const UPVCWindows = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900">Commercial Application</h3>
@@ -278,6 +282,7 @@ const UPVCWindows = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900">Custom Design</h3>

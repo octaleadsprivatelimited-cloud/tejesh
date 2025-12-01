@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWatermark from '../components/ImageWatermark';
 
 const FacadeSolutions = () => {
   return (
@@ -28,13 +29,14 @@ const FacadeSolutions = () => {
                 <p>Featuring energy-efficient designs, weather resistance, and customizable aesthetics to enhance your building's appearance and performance.</p>
               </div>
             </div>
-            <div>
+            <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(6).jpeg"
                 alt="Facade Solutions"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
+              <ImageWatermark className="rounded-b-xl" />
             </div>
           </div>
         </div>

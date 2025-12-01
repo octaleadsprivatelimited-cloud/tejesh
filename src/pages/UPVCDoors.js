@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWatermark from '../components/ImageWatermark';
 
 const UPVCDoors = () => {
   return (
@@ -28,13 +29,14 @@ const UPVCDoors = () => {
                 <p>Featuring multi-point locking systems, weather-resistant materials, and customizable designs to match your property's aesthetics.</p>
               </div>
             </div>
-            <div>
+            <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(14).jpeg"
                 alt="Premium uPVC Doors Chittor"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
+              <ImageWatermark className="rounded-b-xl" />
             </div>
           </div>
         </div>

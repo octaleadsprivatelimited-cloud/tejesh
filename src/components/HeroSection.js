@@ -11,7 +11,7 @@ const HeroSection = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
   const slide = {
     id: 1,
-    video: "/gallery/koemmerling-legacy.mp4",
+    video: "/gallery/upvc-windows-near-me.mp4",
     title: "Premium uPVC Windows in Chittor & Aluminium Doors",
     subtitle: "Transform Your Space with Excellence in Tirupathi",
     description: "Experience the perfect blend of durability, energy efficiency, and modern design with our premium Kommerling uPVC windows and aluminium doors in Chittor District."

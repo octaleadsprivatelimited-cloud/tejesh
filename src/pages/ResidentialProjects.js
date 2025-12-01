@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWatermark from '../components/ImageWatermark';
 
 const ResidentialProjects = () => {
   return (
@@ -36,6 +37,7 @@ const ResidentialProjects = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-3 md:p-6">
                 <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Luxury Villa Project</h3>
@@ -51,6 +53,7 @@ const ResidentialProjects = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-3 md:p-6">
                 <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Modern Home in Tirupathi</h3>
@@ -66,6 +69,7 @@ const ResidentialProjects = () => {
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
+                <ImageWatermark />
               </div>
               <div className="p-3 md:p-6">
                 <h3 className="text-sm md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Modern Home Renovation</h3>

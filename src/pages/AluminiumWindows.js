@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaShieldAlt, FaLeaf, FaEye, FaTools, FaFire } from 'react-icons/fa';
+import ImageWatermark from '../components/ImageWatermark';
 
 const AluminiumWindows = () => {
   const features = [
@@ -73,13 +74,14 @@ const AluminiumWindows = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(16).jpeg"
                 alt="Aluminium Windows Tirupathi"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
+              <ImageWatermark className="rounded-b-xl" />
             </div>
           </div>
         </div>
