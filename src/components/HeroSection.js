@@ -90,12 +90,12 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
-      {/* Static Hero Image */}
+    <section className="relative h-[70vh] md:h-screen overflow-hidden">
+      {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden bg-black">
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain md:object-cover"
           src={slide.video}
           autoPlay
           playsInline
@@ -103,11 +103,11 @@ const HeroSection = () => {
           muted
           preload="auto"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-20 md:bg-opacity-30"></div>
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-center pt-[25vh]">
+      <div className="absolute inset-0 flex items-end md:items-center pt-0 pb-6 md:pt-[25vh] md:pb-0">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             {/* Left Content */}
