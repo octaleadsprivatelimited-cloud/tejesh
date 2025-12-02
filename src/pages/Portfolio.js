@@ -227,8 +227,8 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative h-full flex items-center z-10">
           <div className="container-custom">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
-            <p className="text-xl text-primary-100 max-w-2xl">
+            <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-4">Our Portfolio</h1>
+            <p className="text-sm md:text-xl text-primary-100 max-w-2xl">
               Explore our completed projects and see the quality of our work across different sectors.
             </p>
           </div>
@@ -238,9 +238,9 @@ const Portfolio = () => {
       {/* Filter Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Projects</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 md:mb-4">Our Projects</h2>
+            <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
               From residential homes to large commercial complexes, we've successfully delivered projects across various sectors.
             </p>
           </div>
@@ -263,7 +263,7 @@ const Portfolio = () => {
           </div>
 
           {/* Portfolio Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
             {filteredPortfolio.map((project) => (
               <div
                 key={project.id}
@@ -273,7 +273,7 @@ const Portfolio = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-auto max-h-[520px] object-contain"
+                    className="w-full h-auto max-h-[400px] md:max-h-[520px] object-contain"
                     loading="lazy"
                   />
                   <ImageWatermark />
@@ -295,22 +295,22 @@ const Portfolio = () => {
       {/* Stats Section */}
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">500+</div>
-              <div className="text-lg text-primary-100">Projects Completed</div>
+              <div className="text-2xl md:text-5xl font-bold mb-1 md:mb-2">500+</div>
+              <div className="text-xs md:text-lg text-primary-100">Projects Completed</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">1000+</div>
-              <div className="text-lg text-primary-100">Happy Customers</div>
+              <div className="text-2xl md:text-5xl font-bold mb-1 md:mb-2">1000+</div>
+              <div className="text-xs md:text-lg text-primary-100">Happy Customers</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">8+</div>
-              <div className="text-lg text-primary-100">Years Experience</div>
+              <div className="text-2xl md:text-5xl font-bold mb-1 md:mb-2">8+</div>
+              <div className="text-xs md:text-lg text-primary-100">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
-              <div className="text-lg text-primary-100">Customer Support</div>
+              <div className="text-2xl md:text-5xl font-bold mb-1 md:mb-2">24/7</div>
+              <div className="text-xs md:text-lg text-primary-100">Customer Support</div>
             </div>
           </div>
         </div>
@@ -319,55 +319,55 @@ const Portfolio = () => {
       {/* Testimonials Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 md:mb-4">What Our Clients Say</h2>
+            <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
               Don't just take our word for it. Here's what our satisfied customers have to say about our work.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-600 font-bold">RK</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-3 md:mb-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold text-sm md:text-base">RK</span>
                 </div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900">Rajesh Kumar</h4>
-                  <p className="text-gray-600 text-sm">Hyderabad</p>
+                <div className="ml-3 md:ml-4">
+                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">Rajesh Kumar</h4>
+                  <p className="text-gray-600 text-xs md:text-sm">Hyderabad</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">
+              <p className="text-gray-600 italic text-xs md:text-base">
                 "Excellent quality and professional service. The uPVC windows installed in my home are perfect and have significantly improved energy efficiency."
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-600 font-bold">PS</span>
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-3 md:mb-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold text-sm md:text-base">PS</span>
                 </div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900">Priya Sharma</h4>
-                  <p className="text-gray-600 text-sm">Bangalore</p>
+                <div className="ml-3 md:ml-4">
+                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">Priya Sharma</h4>
+                  <p className="text-gray-600 text-xs md:text-sm">Bangalore</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">
+              <p className="text-gray-600 italic text-xs md:text-base">
                 "Tejesh Profine delivered exceptional aluminium doors for our office. The installation was smooth and the quality is outstanding."
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                  <span className="text-primary-600 font-bold">AP</span>
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-3 md:mb-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <span className="text-primary-600 font-bold text-sm md:text-base">AP</span>
                 </div>
-                <div className="ml-4">
-                  <h4 className="font-semibold text-gray-900">Amit Patel</h4>
-                  <p className="text-gray-600 text-sm">Chennai</p>
+                <div className="ml-3 md:ml-4">
+                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">Amit Patel</h4>
+                  <p className="text-gray-600 text-xs md:text-sm">Chennai</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">
+              <p className="text-gray-600 italic text-xs md:text-base">
                 "Great experience from consultation to installation. The team was professional and the sliding systems are exactly what we wanted."
               </p>
             </div>
@@ -378,10 +378,10 @@ const Portfolio = () => {
       {/* CTA Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 md:mb-4">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
             Join our growing list of satisfied customers. Get a free consultation and quote for your next project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
