@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Tejesh Profine",
-  "description": "Premium uPVC windows and aluminium doors manufacturer and installer in Tirupathi, Chittor, Kadapa, and across Andhra Pradesh. Authorized Kommerling partner with expert installation services.",
+  "description": "Premium uPVC windows and aluminium doors manufacturer and installer in Tirupathi, Chittoor, Kadapa, and across Andhra Pradesh. Authorized Kommerling partner with expert installation services.",
   "url": "https://tejeshprofine.com",
   "telephone": "+91-9949360406",
   "email": "info@tejeshprofine.com",
@@ -11,7 +11,7 @@
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Tirupathi",
-    "addressLocality": "Chittor District",
+    "addressLocality": "Chittoor District",
     "addressRegion": "Andhra Pradesh",
     "postalCode": "517501",
     "addressCountry": "IN"
@@ -45,8 +45,8 @@
         "itemOffered": {
           "@type": "Service",
           "name": "uPVC Windows Installation Tirupathi",
-          "description": "Premium Kommerling uPVC windows for residential and commercial properties in Tirupathi, Chittor, Kadapa",
-          "areaServed": ["Tirupathi", "Chittor", "Kadapa", "Chittoor", "Rayachoti", "Madanapalle"]
+          "description": "Premium Kommerling uPVC windows for residential and commercial properties in Tirupathi, Chittoor, Kadapa",
+          "areaServed": ["Tirupathi", "Chittoor", "Kadapa", "Rayachoti", "Madanapalle"]
         }
       },
       {
@@ -55,7 +55,7 @@
           "@type": "Service",
           "name": "Aluminium Windows Installation Tirupathi",
           "description": "High-quality aluminium windows with energy-efficient features for Andhra Pradesh",
-          "areaServed": ["Tirupathi", "Chittor", "Kadapa", "Chittoor", "Rayachoti", "Madanapalle"]
+          "areaServed": ["Tirupathi", "Chittoor", "Kadapa", "Rayachoti", "Madanapalle"]
         }
       },
       {
@@ -63,8 +63,8 @@
         "itemOffered": {
           "@type": "Service",
           "name": "uPVC Doors Installation Tirupathi",
-          "description": "Durable and secure uPVC doors for homes and offices in Chittor District",
-          "areaServed": ["Tirupathi", "Chittor", "Kadapa", "Chittoor", "Rayachoti", "Madanapalle"]
+          "description": "Durable and secure uPVC doors for homes and offices in Chittoor District",
+          "areaServed": ["Tirupathi", "Chittoor", "Kadapa", "Rayachoti", "Madanapalle"]
         }
       },
       {
@@ -73,7 +73,7 @@
           "@type": "Service",
           "name": "Aluminium Doors Installation Tirupathi",
           "description": "Premium aluminium doors with modern design and security features",
-          "areaServed": ["Tirupathi", "Chittor", "Kadapa", "Chittoor", "Rayachoti", "Madanapalle"]
+          "areaServed": ["Tirupathi", "Chittoor", "Kadapa", "Rayachoti", "Madanapalle"]
         }
       }
     ]
@@ -96,7 +96,7 @@
     },
     {
       "@type": "AdministrativeArea",
-      "name": "Chittor District",
+      "name": "Chittoor District",
       "containedInPlace": {
         "@type": "State",
         "name": "Andhra Pradesh"
@@ -135,7 +135,7 @@
       }
     }
   ],
-  "keywords": "uPVC windows Tirupathi, uPVC doors Tirupathi, aluminium windows Tirupathi, aluminium doors Tirupathi, uPVC windows Chittor, uPVC doors Chittor, uPVC windows Kadapa, uPVC doors Kadapa, uPVC windows Andhra Pradesh, Kommerling uPVC windows, window installation, door installation, energy efficient windows",
+  "keywords": "uPVC windows Tirupathi, uPVC doors Tirupathi, aluminium windows Tirupathi, aluminium doors Tirupathi, uPVC windows Chittoor, uPVC doors Chittoor, uPVC windows Kadapa, uPVC doors Kadapa, uPVC windows Andhra Pradesh, Kommerling uPVC windows, window installation, door installation, energy efficient windows",
   "sameAs": [
     "https://www.facebook.com/tejeshprofine",
     "https://www.instagram.com/tejeshprofine",

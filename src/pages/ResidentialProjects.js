@@ -33,7 +33,7 @@ const ResidentialProjects = () => {
               <div className="relative h-40 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png"
-                  alt="Residential Project Chittor"
+                  alt="Residential Project Chittoor"
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
@@ -41,7 +41,7 @@ const ResidentialProjects = () => {
               </div>
               <div className="p-2 md:p-6">
                 <h3 className="text-xs md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Luxury Villa Project</h3>
-                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Complete uPVC windows and doors installation for a luxury villa in Chittor District.</p>
+                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Complete uPVC windows and doors installation for a luxury villa in Chittoor District.</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const ResidentialProjects = () => {
               <div className="relative h-40 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/tejesh profine chittor.jpg"
-                  alt="Residential Project Chittor District"
+                  alt="Residential Project Chittoor District"
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
@@ -73,7 +73,7 @@ const ResidentialProjects = () => {
               </div>
               <div className="p-2 md:p-6">
                 <h3 className="text-xs md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Modern Home Renovation</h3>
-                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Complete renovation with uPVC windows and doors in Chittor District.</p>
+                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Complete renovation with uPVC windows and doors in Chittoor District.</p>
               </div>
             </div>
           </div>

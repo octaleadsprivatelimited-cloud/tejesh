@@ -10,17 +10,17 @@ const Home = () => {
     {
       icon: FaShieldAlt,
       title: "Premium Kommerling uPVC Windows Tirupathi",
-      description: "We deploy certified Kommerling uPVC windows in Tirupathi, Chittor, Kadapa, and across Andhra Pradesh with advanced fabrication for long-lasting performance."
+      description: "We deploy certified Kommerling uPVC windows in Tirupathi, Chittoor, Kadapa, and across Andhra Pradesh with advanced fabrication for long-lasting performance."
     },
     {
       icon: FaTools,
       title: "Expert uPVC Installation Teams Tirupathi",
-      description: "Our certified technicians handle complex uPVC windows and aluminium doors installations with precision in Tirupathi, Chittor, Kadapa, Chittoor, and surrounding areas."
+      description: "Our certified technicians handle complex uPVC windows and aluminium doors installations with precision in Tirupathi, Chittoor, Kadapa, and surrounding areas."
     },
     {
       icon: FaAward,
-      title: "Leading South Indian Provider",
-      description: "Established in 2025, Tejesh Profine is recognised for premium window and door solutions across the tri-state region."
+      title: "Excellence in Woodwork Interiors Since 1998",
+      description: "With over 25 years of excellence in woodwork interiors since 1998, Tejesh Profine brings unmatched craftsmanship to premium window and door solutions across the tri-state region."
     },
     {
       icon: FaUsers,
@@ -30,7 +30,7 @@ const Home = () => {
     {
       icon: FaClock,
       title: "Timely Project Delivery",
-      description: "Our logistics network keeps fabrication and installation schedules on track across Andhra Pradesh, Karnataka, and Telangana."
+      description: "Our logistics network keeps fabrication and installation schedules on track across Andhra Pradesh, Karnataka, and Tamil Nadu."
     },
     {
       icon: FaLeaf,
@@ -40,7 +40,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "500+", label: "uPVC Windows Installed in Tirupathi & Chittor" },
+    { number: "500+", label: "uPVC Windows Installed in Tirupathi & Chittoor" },
     { number: "2025", label: "Serving Andhra Pradesh Since" },
     { number: "1000+", label: "Happy Customers in Tirupathi, Kadapa & Chittoor" },
     { number: "24/7", label: "Support Across Andhra Pradesh" }
@@ -49,15 +49,15 @@ const Home = () => {
   return (
     <div>
       <SEO 
-        title="Top uPVC Industry | Leading uPVC Manufacturers & Suppliers in Andhra Pradesh, Tamil Nadu, Karnataka, Telangana"
-        description="Tejesh Profine - Top uPVC industry manufacturer and supplier across Andhra Pradesh, Tamil Nadu, Karnataka & Telangana. Premium Kommerling uPVC windows, doors, facade solutions. Expert installation, energy-efficient products. Free quotes. Call +91 9949360406"
-        keywords="uPVC industry Andhra Pradesh, uPVC industry Tamil Nadu, uPVC industry Karnataka, uPVC industry Telangana, uPVC manufacturers Andhra Pradesh, uPVC manufacturers Tamil Nadu, uPVC manufacturers Karnataka, uPVC manufacturers Telangana, uPVC suppliers Andhra Pradesh, uPVC suppliers Tamil Nadu, uPVC suppliers Karnataka, uPVC suppliers Telangana, uPVC companies Andhra Pradesh, uPVC companies Tamil Nadu, uPVC companies Karnataka, uPVC companies Telangana, uPVC dealers Andhra Pradesh, uPVC dealers Tamil Nadu, uPVC dealers Karnataka, uPVC dealers Telangana, uPVC windows Andhra Pradesh, uPVC windows Tamil Nadu, uPVC windows Karnataka, uPVC windows Telangana, uPVC doors Andhra Pradesh, uPVC doors Tamil Nadu, uPVC doors Karnataka, uPVC doors Telangana, Kommerling uPVC Andhra Pradesh, Kommerling uPVC Tamil Nadu, Kommerling uPVC Karnataka, Kommerling uPVC Telangana, uPVC industry Hyderabad, uPVC industry Chennai, uPVC industry Bangalore, uPVC industry Visakhapatnam, uPVC industry Vijayawada, uPVC industry Coimbatore, uPVC industry Madurai, uPVC industry Mysore, uPVC industry Tirupati, uPVC industry Warangal, uPVC windows Hyderabad, uPVC windows Chennai, uPVC windows Bangalore, uPVC windows Visakhapatnam, uPVC windows Vijayawada, uPVC windows Guntur, uPVC windows Kakinada, uPVC windows Rajahmundry, uPVC windows Nellore, uPVC windows Kadapa, uPVC windows Anantapur, uPVC windows Eluru, uPVC windows Kurnool, uPVC windows Chittoor, uPVC windows Ongole, uPVC windows Coimbatore, uPVC windows Trichy, uPVC windows Salem, uPVC windows Tirunelveli, uPVC windows Erode, uPVC windows Vellore, uPVC windows Thanjavur, uPVC windows Dindigul, uPVC windows Hosur, uPVC windows Hubli, uPVC windows Mangalore, uPVC windows Belgaum, uPVC windows Gulbarga, uPVC windows Davanagere, uPVC windows Bellary, uPVC windows Tumkur, uPVC windows Shimoga, uPVC windows Karimnagar, uPVC windows Nizamabad, uPVC windows Khammam, uPVC windows Nalgonda, uPVC doors Hyderabad, uPVC doors Chennai, uPVC doors Bangalore, uPVC doors Visakhapatnam, uPVC doors Vijayawada, uPVC doors Guntur, uPVC doors Coimbatore, uPVC doors Madurai, uPVC doors Mysore, uPVC doors Warangal, uPVC manufacturers Hyderabad, uPVC manufacturers Chennai, uPVC manufacturers Bangalore, uPVC manufacturers Visakhapatnam, uPVC manufacturers Vijayawada, uPVC manufacturers Coimbatore, uPVC suppliers Hyderabad, uPVC suppliers Chennai, uPVC suppliers Bangalore, uPVC suppliers Visakhapatnam, uPVC suppliers Vijayawada, uPVC suppliers Coimbatore, best uPVC manufacturers South India, top uPVC suppliers South India, uPVC industry near me, uPVC manufacturing companies, uPVC window manufacturers, uPVC door manufacturers, energy efficient uPVC products, premium uPVC solutions"
+        title="Top uPVC Industry | Leading uPVC Manufacturers & Suppliers in Andhra Pradesh, Tamil Nadu, Karnataka"
+        description="Tejesh Profine - Top uPVC industry manufacturer and supplier across Andhra Pradesh, Tamil Nadu, Karnataka. Premium Kommerling uPVC windows, doors, facade solutions. Expert installation, energy-efficient products. Free quotes. Call +91 9949360406"
+        keywords="uPVC industry Andhra Pradesh, uPVC industry Tamil Nadu, uPVC industry Karnataka, uPVC manufacturers Andhra Pradesh, uPVC manufacturers Tamil Nadu, uPVC manufacturers Karnataka, uPVC suppliers Andhra Pradesh, uPVC suppliers Tamil Nadu, uPVC suppliers Karnataka, uPVC companies Andhra Pradesh, uPVC companies Tamil Nadu, uPVC companies Karnataka, uPVC dealers Andhra Pradesh, uPVC dealers Tamil Nadu, uPVC dealers Karnataka, uPVC windows Andhra Pradesh, uPVC windows Tamil Nadu, uPVC windows Karnataka, uPVC doors Andhra Pradesh, uPVC doors Tamil Nadu, uPVC doors Karnataka, Kommerling uPVC Andhra Pradesh, Kommerling uPVC Tamil Nadu, Kommerling uPVC Karnataka, uPVC industry Hyderabad, uPVC industry Chennai, uPVC industry Bangalore, uPVC industry Visakhapatnam, uPVC industry Vijayawada, uPVC industry Coimbatore, uPVC industry Madurai, uPVC industry Mysore, uPVC industry Tirupati, uPVC windows Hyderabad, uPVC windows Chennai, uPVC windows Bangalore, uPVC windows Visakhapatnam, uPVC windows Vijayawada, uPVC windows Guntur, uPVC windows Kakinada, uPVC windows Rajahmundry, uPVC windows Nellore, uPVC windows Kadapa, uPVC windows Anantapur, uPVC windows Eluru, uPVC windows Kurnool, uPVC windows Chittoor, uPVC windows Ongole, uPVC windows Coimbatore, uPVC windows Trichy, uPVC windows Salem, uPVC windows Tirunelveli, uPVC windows Erode, uPVC windows Vellore, uPVC windows Thanjavur, uPVC windows Dindigul, uPVC windows Hosur, uPVC windows Hubli, uPVC windows Mangalore, uPVC windows Belgaum, uPVC windows Gulbarga, uPVC windows Davanagere, uPVC windows Bellary, uPVC windows Tumkur, uPVC windows Shimoga, uPVC doors Hyderabad, uPVC doors Chennai, uPVC doors Bangalore, uPVC doors Visakhapatnam, uPVC doors Vijayawada, uPVC doors Guntur, uPVC doors Coimbatore, uPVC doors Madurai, uPVC doors Mysore, uPVC manufacturers Hyderabad, uPVC manufacturers Chennai, uPVC manufacturers Bangalore, uPVC manufacturers Visakhapatnam, uPVC manufacturers Vijayawada, uPVC manufacturers Coimbatore, uPVC suppliers Hyderabad, uPVC suppliers Chennai, uPVC suppliers Bangalore, uPVC suppliers Visakhapatnam, uPVC suppliers Vijayawada, uPVC suppliers Coimbatore, best uPVC manufacturers South India, top uPVC suppliers South India, uPVC industry near me, uPVC manufacturing companies, uPVC window manufacturers, uPVC door manufacturers, energy efficient uPVC products, premium uPVC solutions"
         url="https://tejeshprofine.com"
         schema={{
           "@context": "https://schema.org",
           "@type": "ManufacturingBusiness",
           "name": "Tejesh Profine",
-          "description": "Leading uPVC industry manufacturer and supplier of premium Kommerling uPVC windows, doors, and facade solutions across Andhra Pradesh, Tamil Nadu, Karnataka, and Telangana. Expert installation services with energy-efficient products.",
+          "description": "Leading uPVC industry manufacturer and supplier of premium Kommerling uPVC windows, doors, and facade solutions across Andhra Pradesh, Tamil Nadu, and Karnataka. Expert installation services with energy-efficient products.",
           "url": "https://tejeshprofine.com",
           "telephone": "+91-9949360406",
           "email": "info@tejeshprofine.com",
@@ -66,7 +66,7 @@ const Home = () => {
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Tirupathi",
-            "addressLocality": "Chittor District",
+            "addressLocality": "Chittoor District",
             "addressRegion": "Andhra Pradesh",
             "postalCode": "517501",
             "addressCountry": "IN"
@@ -107,10 +107,6 @@ const Home = () => {
             {
               "@type": "State",
               "name": "Karnataka"
-            },
-            {
-              "@type": "State",
-              "name": "Telangana"
             },
             {
               "@type": "City",
@@ -298,7 +294,7 @@ const Home = () => {
             },
             {
               "@type": "AdministrativeArea",
-              "name": "Chittor District"
+              "name": "Chittoor District"
             }
           ],
           "makesOffer": {
@@ -317,13 +313,13 @@ const Home = () => {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "uPVC Windows Installation Chittor",
-                  "description": "Premium Kommerling uPVC windows installation for residential and commercial properties in Chittor District",
+                  "name": "uPVC Windows Installation Chittoor",
+                  "description": "Premium Kommerling uPVC windows installation for residential and commercial properties in Chittoor District",
                   "provider": {
                     "@type": "LocalBusiness",
                     "name": "Tejesh Profine"
                   },
-                  "areaServed": "Chittor District"
+                  "areaServed": "Chittoor District"
                 }
               },
               {
@@ -343,13 +339,13 @@ const Home = () => {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Sliding Systems Chittor",
-                  "description": "Modern sliding window and door systems for space-saving solutions in Chittor",
+                  "name": "Sliding Systems Chittoor",
+                  "description": "Modern sliding window and door systems for space-saving solutions in Chittoor",
                   "provider": {
                     "@type": "LocalBusiness",
                     "name": "Tejesh Profine"
                   },
-                  "areaServed": "Chittor District"
+                  "areaServed": "Chittoor District"
                 }
               }
             ]
@@ -416,7 +412,7 @@ const Home = () => {
               <div className="h-72 bg-gray-900 flex items-center justify-center relative">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(1).jpeg"
-                  alt="uPVC Windows Chittor - Kommerling"
+                  alt="uPVC Windows Chittoor - Kommerling"
                   className="max-h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -425,7 +421,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 pointer-events-none"></div>
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <h3 className="text-2xl font-bold mb-2">uPVC Windows</h3>
-                <p className="mb-4">Energy-efficient, weather-resistant Kommerling uPVC windows for projects across Andhra Pradesh, Karnataka, and Telangana.</p>
+                <p className="mb-4">Energy-efficient, weather-resistant Kommerling uPVC windows for projects across Andhra Pradesh, Karnataka, and Tamil Nadu.</p>
                 <Link to="/upvc-windows" className="btn-primary bg-white text-primary-600 hover:bg-primary-50">
                   Learn More
                 </Link>
@@ -456,7 +452,7 @@ const Home = () => {
               <div className="h-72 bg-gray-900 flex items-center justify-center relative">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(6).jpeg"
-                  alt="Premium Doors Chittor"
+                  alt="Premium Doors Chittoor"
                   className="max-h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -487,12 +483,12 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Premium uPVC Windows & Aluminium Doors Across Andhra Pradesh, Karnataka & Telangana
+                Premium uPVC Windows & Aluminium Doors Across Andhra Pradesh, Karnataka & Tamil Nadu
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
                   <strong>Tejesh Profine</strong> combines a two-century family legacy in carpentry with modern <strong>Kommerling uPVC</strong> expertise to serve homeowners,
-                  builders, and architects throughout <strong>Andhra Pradesh, Karnataka, and Telangana</strong>. From our base in Chittoor District, we deliver premium uPVC windows,
+                  builders, and architects throughout <strong>Andhra Pradesh, Karnataka, and Tamil Nadu</strong>. <span className="bg-yellow-100 px-3 py-1 rounded font-bold text-primary-900">Excellence in woodwork interiors since 1998</span>. From our base in Chittoor District, we deliver premium uPVC windows,
                   aluminium doors, sliding systems, and facade solutions engineered for South Indian climates.
                 </p>
                 <p>
@@ -501,7 +497,7 @@ const Home = () => {
                   Every installation is executed by certified specialists with rigorous quality checks and comprehensive warranties.
                 </p>
                 <p>
-                  Whether you require <strong>uPVC windows in Andhra Pradesh</strong>, <strong>architectural aluminium doors in Karnataka</strong>, or <strong>bespoke facade solutions in Telangana</strong>,
+                  Whether you require <strong>uPVC windows in Andhra Pradesh</strong>, <strong>architectural aluminium doors in Karnataka</strong>, or <strong>bespoke facade solutions in Tamil Nadu</strong>,
                   our team manages your project end-to-end—from consultation and design to manufacturing and after-sales support. Reach us at <strong>+91 9949360406</strong> or via WhatsApp for a personalised quote.
                 </p>
               </div>
@@ -511,7 +507,7 @@ const Home = () => {
                 <div className="grid md:grid-cols-2 gap-2 text-gray-600">
                   <div>• Andhra Pradesh – Tirupati, Visakhapatnam, Vijayawada, Guntur</div>
                   <div>• Karnataka – Bengaluru, Mysuru, Hubbali-Dharwad, Mangaluru</div>
-                  <div>• Telangana – Hyderabad, Warangal, Karimnagar, Nizamabad</div>
+                  <div>• Tamil Nadu – Chennai, Coimbatore, Madurai, Trichy, Salem</div>
                   <div>• Specialist solutions for coastal, heritage, and high-rise projects</div>
                 </div>
               </div>
@@ -519,11 +515,12 @@ const Home = () => {
             
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Why Choose Tejesh Profine for uPVC Windows in Chittor?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Why Choose Tejesh Profine for uPVC Windows in Chittoor?</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Authorized Kommerling uPVC partner</li>
+                  <li>• <strong className="text-primary-700">Excellence in woodwork interiors since 1998</strong></li>
                   <li>• Two-century family legacy in craftsmanship</li>
-                  <li>• Expert installation teams across Andhra Pradesh, Karnataka & Telangana</li>
+                  <li>• Expert installation teams across Andhra Pradesh, Karnataka & Tamil Nadu</li>
                   <li>• Energy-efficient solutions tailored to diverse South Indian climates</li>
                   <li>• Comprehensive warranty on all products</li>
                   <li>• 24/7 customer support across our tri-state service region</li>
@@ -533,7 +530,7 @@ const Home = () => {
               <div className="bg-primary-50 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-primary-900 mb-3">Get Your Free Quote Today</h3>
                 <p className="text-primary-700 mb-4">
-                  Ready to upgrade your property anywhere in Andhra Pradesh, Karnataka, or Telangana? Contact us for a free consultation and quote.
+                  Ready to upgrade your property anywhere in Andhra Pradesh, Karnataka, or Tamil Nadu? Contact us for a free consultation and quote.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="tel:+919949360406" className="btn-primary bg-accent-500 text-white hover:bg-accent-600 shadow-md">

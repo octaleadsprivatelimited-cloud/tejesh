@@ -98,7 +98,7 @@ const Footer = () => {
             </Link>
             
             <p className="text-gray-300 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
-              Established in 2025, Tejesh Profine specializes in premium quality uPVC and Aluminium windows and doors for residential, commercial, and industrial properties.
+              Established in 2025, Tejesh Profine specializes in premium quality uPVC and Aluminium windows and doors for residential, commercial, and industrial properties. <strong className="text-white font-bold">Excellence in woodwork interiors since 1998</strong>.
             </p>
 
             {/* Contact Info */}
@@ -120,7 +120,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-primary-400 mt-1 text-sm" />
                 <span className="text-gray-300 text-sm md:text-base">
-                  Tirupathi, Chittor District,<br />
+                  <span className="font-semibold text-white">Global Standard uPVC Profile</span><br />
+                  Tirupathi, Chittoor District,<br />
                   Andhra Pradesh, India
                 </span>
               </div>

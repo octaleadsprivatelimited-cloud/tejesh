@@ -39,8 +39,8 @@ const Contact = () => {
     },
     {
       icon: FaMapMarkerAlt,
-      title: "Address",
-      details: "Tirupathi, Chittor District, Andhra Pradesh, India"
+      title: "Global Standard uPVC Profile",
+      details: "Tirupathi, Chittoor District, Andhra Pradesh, India"
     },
     {
       icon: FaWhatsapp,
@@ -94,8 +94,8 @@ const Contact = () => {
   return (
     <div>
       <SEO 
-        title="Contact Tejesh Profine | Free Quote for uPVC Windows in Chittor | Call +91 9949360406"
-        description="Contact Tejesh Profine for free quotes on uPVC windows and aluminium doors in Chittor, Tirupathi. Call +91 9949360406 or WhatsApp for expert consultation. Visit our showroom in Chittor District for premium Kommerling windows."
+        title="Contact Tejesh Profine | Free Quote for uPVC Windows in Chittoor | Call +91 9949360406"
+        description="Contact Tejesh Profine for free quotes on uPVC windows and aluminium doors in Chittoor, Tirupathi. Call +91 9949360406 or WhatsApp for expert consultation. Visit our showroom in Chittoor District for premium Kommerling windows."
         keywords="contact Tejesh Profine, uPVC windows enquiry Hyderabad, Kommerling partner contact Andhra Pradesh, uPVC windows quote Bangalore, aluminium doors enquiry Tirupati, free consultation Visakhapatnam, window installation quote Vijayawada, call +91 9949360406, WhatsApp uPVC windows Hyderabad, showroom visit Bengaluru, Tejesh Profine customer support South India"
         url="https://tejeshprofine.com/contact"
       />
@@ -313,7 +313,7 @@ const Contact = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600">
-              Visit our location in Tirupathi, Chittor District
+              Visit our location in Tirupathi, Chittoor District
             </p>
           </div>
           
@@ -322,7 +322,7 @@ const Contact = () => {
               <div className="text-center text-gray-500">
                 <FaMapMarkerAlt className="text-4xl mx-auto mb-4" />
                 <p className="text-lg">Interactive Map</p>
-                <p className="text-sm">Tirupathi, Chittor District, Andhra Pradesh</p>
+                <p className="text-sm">Tirupathi, Chittoor District, Andhra Pradesh</p>
               </div>
             </div>
           </div>

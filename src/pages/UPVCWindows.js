@@ -49,15 +49,15 @@ const UPVCWindows = () => {
   return (
     <div>
       <SEO 
-        title="Premium uPVC Windows Chittor | Kommerling uPVC Windows Tirupathi | Energy Efficient"
-        description="Best uPVC windows in Chittor by Tejesh Profine. Authorized Kommerling partner offering energy-efficient, weather-resistant uPVC windows for homes & offices in Tirupathi. 30% energy savings, 10-year warranty. Free installation quote +91 9949360406"
-        keywords="uPVC windows Tirupathi, uPVC windows Chittor, uPVC windows Kadapa, uPVC windows Andhra Pradesh, uPVC windows Chittoor, Kommerling uPVC windows Tirupathi, energy efficient uPVC windows Chittor, double glazed uPVC windows Kadapa, soundproof uPVC windows Tirupathi, premium uPVC window supplier Andhra Pradesh, tilt and turn uPVC windows Chittor, sliding uPVC windows Tirupathi, uPVC windows Rayachoti, uPVC windows Madanapalle"
+        title="Premium uPVC Windows Chittoor | Kommerling uPVC Windows Tirupathi | Energy Efficient"
+        description="Best uPVC windows in Chittoor by Tejesh Profine. Authorized Kommerling partner offering energy-efficient, weather-resistant uPVC windows for homes & offices in Tirupathi. 30% energy savings, 10-year warranty. Free installation quote +91 9949360406"
+        keywords="uPVC windows Tirupathi, uPVC windows Chittoor, uPVC windows Kadapa, uPVC windows Andhra Pradesh, Kommerling uPVC windows Tirupathi, energy efficient uPVC windows Chittoor, double glazed uPVC windows Kadapa, soundproof uPVC windows Tirupathi, premium uPVC window supplier Andhra Pradesh, tilt and turn uPVC windows Chittoor, sliding uPVC windows Tirupathi, uPVC windows Rayachoti, uPVC windows Madanapalle"
         url="https://tejeshprofine.com/upvc-windows"
         schema={{
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Premium uPVC Windows",
-          "description": "Energy-efficient Kommerling uPVC windows for residential and commercial properties in Chittor District",
+          "description": "Energy-efficient Kommerling uPVC windows for residential and commercial properties in Chittoor District",
           "brand": {
             "@type": "Brand",
             "name": "Kommerling"
@@ -117,7 +117,7 @@ const UPVCWindows = () => {
             <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(4).jpeg"
-                alt="uPVC Windows Chittor - Kommerling"
+                alt="uPVC Windows Chittoor - Kommerling"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />
@@ -246,7 +246,7 @@ const UPVCWindows = () => {
               <div className="relative h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(10).jpeg"
-                  alt="uPVC Windows - Residential Chittor"
+                  alt="uPVC Windows - Residential Chittoor"
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
@@ -254,7 +254,7 @@ const UPVCWindows = () => {
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900">Residential Application</h3>
-                <p className="text-gray-600 text-sm">Modern home with energy-efficient uPVC windows in Chittor</p>
+                <p className="text-gray-600 text-sm">Modern home with energy-efficient uPVC windows in Chittoor</p>
               </div>
             </div>
 
@@ -286,7 +286,7 @@ const UPVCWindows = () => {
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-gray-900">Custom Design</h3>
-                <p className="text-gray-600 text-sm">Custom-sized uPVC windows for unique spaces in Chittor District</p>
+                <p className="text-gray-600 text-sm">Custom-sized uPVC windows for unique spaces in Chittoor District</p>
               </div>
             </div>
           </div>

@@ -213,7 +213,7 @@ const Header = () => {
                     </div>
                     <div className="flex items-center space-x-2 text-gray-800">
                       <span className="font-medium">📍</span>
-                      <span>Tirupathi, Chittor District</span>
+                      <span><span className="font-semibold">Global Standard uPVC Profile</span>, Tirupathi, Chittoor District</span>
                     </div>
                   </div>
                 </motion.div>

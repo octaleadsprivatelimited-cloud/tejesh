@@ -35,11 +35,11 @@ const BlogPostDetail = () => {
         <h3>4. Design and Aesthetics</h3>
         <p>uPVC windows are available in various colors and finishes. You can choose from classic white, woodgrain effects, or custom colors to match your home's exterior.</p>
         
-        <h2>Installation in Chittor District</h2>
-        <p>Proper installation is crucial for optimal performance. Our certified technicians in Chittor District ensure precise fitting and sealing, maximizing the benefits of your uPVC windows.</p>
+        <h2>Installation in Chittoor District</h2>
+        <p>Proper installation is crucial for optimal performance. Our certified technicians in Chittoor District ensure precise fitting and sealing, maximizing the benefits of your uPVC windows.</p>
         
         <h2>Conclusion</h2>
-        <p>Choosing the right uPVC windows involves considering factors like frame quality, glass type, security features, and design. At Tejesh Profine, we help you make informed decisions and provide expert installation services across Chittor District and Tirupathi.</p>
+        <p>Choosing the right uPVC windows involves considering factors like frame quality, glass type, security features, and design. At Tejesh Profine, we help you make informed decisions and provide expert installation services across Chittoor District and Tirupathi.</p>
       `
     },
     {
@@ -93,7 +93,7 @@ const BlogPostDetail = () => {
         <p>uPVC and thermally broken aluminium frames prevent heat transfer, contributing to overall energy efficiency.</p>
         
         <h2>Savings Potential</h2>
-        <p>Energy-efficient windows can reduce your heating and cooling costs by up to 30%. In Chittor District's climate, this translates to significant annual savings on your electricity bills.</p>
+        <p>Energy-efficient windows can reduce your heating and cooling costs by up to 30%. In Chittoor District's climate, this translates to significant annual savings on your electricity bills.</p>
       `
     },
     {
@@ -106,7 +106,7 @@ const BlogPostDetail = () => {
       category: "Design",
       readTime: "4 min read",
       content: `
-        <p>Modern door designs are evolving to combine functionality with aesthetic appeal. Contemporary homes in Chittor District and Tirupathi are embracing innovative door solutions that enhance both security and style.</p>
+        <p>Modern door designs are evolving to combine functionality with aesthetic appeal. Contemporary homes in Chittoor District and Tirupathi are embracing innovative door solutions that enhance both security and style.</p>
         
         <h2>Current Trends</h2>
         <p>Sliding glass doors, bi-fold doors, and frameless designs are gaining popularity. These designs maximize natural light and create seamless indoor-outdoor connections.</p>
@@ -143,7 +143,7 @@ const BlogPostDetail = () => {
         <p>Schedule annual professional inspections with Tejesh Profine to ensure your windows and doors remain in optimal condition. Our technicians can identify and address any issues before they become major problems.</p>
         
         <h2>Common Issues and Solutions</h2>
-        <p>If windows become difficult to open or close, check for debris in tracks or worn hardware. For condensation issues, ensure proper ventilation. If problems persist, contact our maintenance team in Chittor District.</p>
+        <p>If windows become difficult to open or close, check for debris in tracks or worn hardware. For condensation issues, ensure proper ventilation. If problems persist, contact our maintenance team in Chittoor District.</p>
       `
     },
     {
@@ -164,8 +164,8 @@ const BlogPostDetail = () => {
         <h2>Types of Sliding Systems</h2>
         <p>From single-panel sliders to multi-panel systems, there's a sliding door solution for every need. Bi-fold and stacking systems offer even more flexibility for larger openings.</p>
         
-        <h2>Installation in Chittor District</h2>
-        <p>Our expert team in Chittor District provides professional installation of sliding door systems, ensuring smooth operation and optimal performance.</p>
+        <h2>Installation in Chittoor District</h2>
+        <p>Our expert team in Chittoor District provides professional installation of sliding door systems, ensuring smooth operation and optimal performance.</p>
       `
     }
   ];
@@ -240,7 +240,7 @@ const BlogPostDetail = () => {
                 Need Help with Your Windows or Doors?
               </h2>
               <p className="text-gray-600 mb-6">
-                Contact Tejesh Profine for expert consultation and installation services in Chittor District and Tirupathi.
+                Contact Tejesh Profine for expert consultation and installation services in Chittoor District and Tirupathi.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-primary">

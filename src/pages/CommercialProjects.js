@@ -33,15 +33,15 @@ const CommercialProjects = () => {
               <div className="relative h-40 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(10).jpeg"
-                  alt="Commercial Project Chittor"
+                  alt="Commercial Project Chittoor"
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
                 <ImageWatermark />
               </div>
               <div className="p-2 md:p-6">
-                <h3 className="text-xs md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Office Complex in Chittor</h3>
-                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Modern uPVC windows and facade for a corporate office building in Chittor District.</p>
+                <h3 className="text-xs md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Office Complex in Chittoor</h3>
+                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Modern uPVC windows and facade for a corporate office building in Chittoor District.</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const CommercialProjects = () => {
               <div className="relative h-40 md:h-64 flex items-center justify-center bg-gray-100">
                 <img
                   src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(12).jpeg"
-                  alt="Commercial Project Chittor District"
+                  alt="Commercial Project Chittoor District"
                   className="max-h-full w-auto object-contain"
                   loading="lazy"
                 />
@@ -73,7 +73,7 @@ const CommercialProjects = () => {
               </div>
               <div className="p-2 md:p-6">
                 <h3 className="text-xs md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Retail Store</h3>
-                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Premium uPVC windows and doors for a retail store in Chittor District.</p>
+                <p className="text-[10px] md:text-base text-gray-600 hidden md:block">Premium uPVC windows and doors for a retail store in Chittoor District.</p>
               </div>
             </div>
           </div>

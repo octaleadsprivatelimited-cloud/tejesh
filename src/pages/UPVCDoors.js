@@ -32,7 +32,7 @@ const UPVCDoors = () => {
             <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(14).jpeg"
-                alt="Premium uPVC Doors Chittor"
+                alt="Premium uPVC Doors Chittoor"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />

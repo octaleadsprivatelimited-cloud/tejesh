@@ -1,6 +1,6 @@
 # Tejesh Profine - uPVC Windows & Doors
 
-Premium uPVC windows and aluminium doors manufacturer and installer in Chittor District, Tirupathi. Authorized Kommerling partner.
+Premium uPVC windows and aluminium doors manufacturer and installer in Chittoor District, Tirupathi. Authorized Kommerling partner.
 
 ## 🚀 Deployment
 
@@ -38,7 +38,7 @@ npm run build
 
 - **Phone**: +91 9949360406
 - **Email**: info@tejeshprofine.com
-- **Location**: Chittor District, Andhra Pradesh, India
+- **Location**: Chittoor District, Andhra Pradesh, India
 
 ## 📄 License
 

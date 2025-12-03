@@ -27,6 +27,7 @@ const About = () => {
   ];
 
   const milestones = [
+    { year: "1998", title: "Excellence in Woodwork Interiors", description: "Began our journey with excellence in woodwork interiors, establishing a foundation of superior craftsmanship" },
     { year: "2016", title: "Company Founded", description: "Started with a vision to provide premium quality windows and doors" },
     { year: "2018", title: "Expansion", description: "Extended services to commercial and industrial sectors" },
     { year: "2020", title: "Technology Upgrade", description: "Invested in state-of-the-art manufacturing equipment" },
@@ -37,9 +38,9 @@ const About = () => {
   return (
     <div>
       <SEO 
-        title="About Tejesh Profine | Kommerling uPVC Windows Partner in Chittor | V. Venkatesulu"
-        description="Learn about Tejesh Profine - Authorized Kommerling uPVC partner in Chittor, Tirupathi. Founded by V. Venkatesulu in 2025 with a two-century family legacy in carpentry. Premium windows & doors installation across Chittor District."
-        keywords="Tejesh Profine story, Kommerling partner Andhra Pradesh, uPVC windows company Hyderabad, uPVC windows company Bangalore, premium window installer South India, family-owned window business Tirupati, heritage carpentry Telangana, aluminium doors experts Karnataka, Kommerling legacy Chittoor District"
+        title="About Tejesh Profine | Kommerling uPVC Windows Partner in Chittoor | V. Venkatesulu"
+        description="Learn about Tejesh Profine - Authorized Kommerling uPVC partner in Chittoor, Tirupathi. Excellence in woodwork interiors since 1998. Founded by V. Venkatesulu in 2025 with a two-century family legacy in carpentry. Premium windows & doors installation across Chittoor District."
+        keywords="Tejesh Profine story, Kommerling partner Andhra Pradesh, uPVC windows company Chennai, uPVC windows company Bangalore, premium window installer South India, family-owned window business Tirupati, heritage carpentry Tamil Nadu, aluminium doors experts Karnataka, Kommerling legacy Chittoor District"
         url="https://tejeshprofine.com/about"
       />
       {/* Hero Section */}
@@ -52,7 +53,7 @@ const About = () => {
           <div className="container-custom">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About Tejesh Profine</h1>
             <p className="text-xl text-primary-100 max-w-2xl">
-              Established in 2025, Tejesh Profine represents a legacy of craftsmanship spanning two centuries, now embracing modern innovation. Premium uPVC and Aluminium windows and doors with Kommerling partnership.
+              Established in 2025, Tejesh Profine represents a legacy of craftsmanship spanning two centuries, now embracing modern innovation. <strong className="text-white text-2xl font-bold">Excellence in woodwork interiors since 1998</strong>. Premium uPVC and Aluminium windows and doors with Kommerling partnership.
             </p>
           </div>
         </div>
@@ -70,14 +71,14 @@ const About = () => {
                 <p>
                   Tejesh Profine represents a remarkable journey of transformation and innovation, rooted in a rich heritage of craftsmanship spanning over two centuries. Our founder, V. Venkatesulu, hails from a distinguished family lineage of master carpenters, whose expertise and dedication have been passed down through generations.
                 </p>
-                <p>
-                  With the evolution of modern technology and changing architectural demands, V. Venkatesulu recognized the need to adapt traditional craftsmanship to contemporary requirements. He successfully transitioned from traditional carpentry to modern interior renovations, serving a diverse clientele ranging from local communities to top celebrities and political figures across the region.
+                <p className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-600">
+                  <strong className="text-primary-900 text-lg font-bold">Excellence in woodwork interiors since 1998</strong> - With the evolution of modern technology and changing architectural demands, V. Venkatesulu recognized the need to adapt traditional craftsmanship to contemporary requirements. He successfully transitioned from traditional carpentry to modern interior renovations, serving a diverse clientele ranging from local communities to top celebrities and political figures across the region.
                 </p>
                 <p>
                   In 2025, V. Venkatesulu established Tejesh Profine as a strategic venture into the uPVC windows industry, securing an exclusive vendship with Kommerling, a globally recognized leader in uPVC manufacturing. This partnership enables us to deliver premium quality, energy-efficient solutions that combine our traditional values of craftsmanship with cutting-edge technology.
                 </p>
                 <p>
-                  Today, Tejesh Profine stands as a testament to the seamless integration of heritage craftsmanship with modern innovation, serving customers across Tirupathi, Chittor District, and beyond with the same commitment to excellence that has defined our family for generations.
+                  Today, Tejesh Profine stands as a testament to the seamless integration of heritage craftsmanship with modern innovation, serving customers across Tirupathi, Chittoor District, and beyond with the same commitment to excellence that has defined our family for generations.
                 </p>
               </div>
             </div>

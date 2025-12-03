@@ -12,17 +12,17 @@ const HeroSection = () => {
   const slide = {
     id: 1,
     video: "/gallery/upvc-windows-near-me.mp4",
-    title: "Premium uPVC Windows in Chittor & Aluminium Doors",
+    title: "Premium uPVC Windows in Chittoor & Aluminium Doors",
     subtitle: "Transform Your Space with Excellence in Tirupathi",
-    description: "Experience the perfect blend of durability, energy efficiency, and modern design with our premium Kommerling uPVC windows and aluminium doors in Chittor District."
+    description: "Experience the perfect blend of durability, energy efficiency, and modern design with our premium Kommerling uPVC windows and aluminium doors in Chittoor District. Excellence in woodwork interiors since 1998."
   };
 
   const services = [
-    "uPVC Windows Chittor",
+    "uPVC Windows Chittoor",
     "Aluminium Windows Tirupathi", 
-    "uPVC Doors Chittor District",
+    "uPVC Doors Chittoor District",
     "Aluminium Doors Tirupathi",
-    "Sliding Systems Chittor",
+    "Sliding Systems Chittoor",
     "Facade Solutions Tirupathi"
   ];
 

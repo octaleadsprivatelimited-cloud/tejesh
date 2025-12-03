@@ -32,7 +32,7 @@ const SlidingSystems = () => {
             <div className="relative">
               <img
                 src="/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(20).jpeg"
-                alt="Premium Sliding Systems Chittor"
+                alt="Premium Sliding Systems Chittoor"
                 className="rounded-xl shadow-lg"
                 loading="lazy"
               />

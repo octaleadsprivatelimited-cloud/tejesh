@@ -20,7 +20,7 @@ const ImageWatermark = ({ className = "" }) => {
           +91 9949360406
         </p>
         <p className="text-black text-[9px] md:text-xs mt-0.5">
-          Serving Andhra Pradesh, Telangana, Karnataka &amp; Tamilnadu
+          Serving Andhra Pradesh, Tamil Nadu &amp; Karnataka
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@ const FAQ = () => {
         },
         {
           question: "What is your service area?",
-          answer: "We primarily serve Tirupathi and surrounding areas in Chittor District, Andhra Pradesh. We also provide services to other parts of South India. Contact us to check if we serve your location."
+          answer: "We primarily serve Tirupathi and surrounding areas in Chittoor District, Andhra Pradesh. We also provide services to other parts of South India. Contact us to check if we serve your location."
         },
         {
           question: "How long does it take to complete a project?",
