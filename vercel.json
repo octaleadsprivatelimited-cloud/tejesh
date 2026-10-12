@@ -1,71 +1,99 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "framework": "create-react-app",
+  "installCommand": "npm ci --legacy-peer-deps",
+  "buildCommand": "npm run build",
   "outputDirectory": "build",
   "devCommand": "npm start",
-  "installCommand": "npm install --legacy-peer-deps",
-  "framework": "create-react-app",
-  "rewrites": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tejeshprofine.com"
+        }
+      ],
+      "destination": "https://tejeshprofine.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/upvc-windows-tirupathi",
+      "destination": "/upvc-windows",
+      "permanent": true
+    },
+    {
+      "source": "/upvc-windows-chittor",
+      "destination": "/upvc-windows",
+      "permanent": true
+    },
+    {
+      "source": "/upvc-windows-kadapa",
+      "destination": "/upvc-windows",
+      "permanent": true
+    },
+    {
+      "source": "/upvc-doors-tirupathi",
+      "destination": "/upvc-doors",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/contact",
+      "permanent": true
     }
   ],
   "headers": [
     {
-      "source": "/sitemap.xml",
+      "source": "/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "application/xml"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
         }
       ]
     },
     {
-      "source": "/robots.txt",
+      "source": "/static/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "text/plain"
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     },
     {
-      "source": "/sitemap-index.xml",
+      "source": "/optimized/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "application/xml"
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
       ]
     },
     {
-      "source": "/local-business-schema.json",
+      "source": "/gallery/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    },
-    {
-      "source": "/BingSiteAuth.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml"
-        }
-      ]
-    },
-    {
-      "source": "/.well-known/security.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain"
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     }
   ]
 }
-

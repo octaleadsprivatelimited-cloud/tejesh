@@ -1,0 +1,201 @@
+{
+  "origin": "https://tejeshprofine.com",
+  "name": "Tejesh Profine",
+  "phone": "+91-9949360406",
+  "email": "info@tejeshprofine.com",
+  "image": "/gallery/tejesh profine chittor kommerling.jpg",
+  "routes": {
+    "/": {
+      "component": "Home",
+      "title": "uPVC Windows & Doors in Tirupati | Tejesh Profine",
+      "description": "Kommerling uPVC windows, aluminium doors and installation in Tirupati and Chittoor. Explore our range and request a free quote.",
+      "keywords": "uPVC windows Tirupati, uPVC windows Chittoor, Kommerling windows"
+    },
+    "/about": {
+      "component": "About",
+      "title": "About Our Window & Door Team | Tejesh Profine",
+      "description": "Meet Tejesh Profine, a window and door specialist serving Tirupati, Chittoor and South India with a family background in carpentry and woodwork.",
+      "keywords": "Tejesh Profine, window manufacturer Chittoor"
+    },
+    "/services": {
+      "component": "Services",
+      "title": "Window & Door Services in Chittoor | Tejesh Profine",
+      "description": "Explore uPVC windows, aluminium doors, sliding systems and facade solutions. Get help with design, installation and maintenance in Tirupati and Chittoor.",
+      "keywords": "window installation Chittoor, door installation Tirupati"
+    },
+    "/portfolio": {
+      "component": "Portfolio",
+      "title": "Window & Door Project Portfolio | Tejesh Profine",
+      "description": "Explore window and door designs for residential, commercial and industrial spaces. Discuss your next project with our team in Chittoor.",
+      "keywords": "uPVC window projects, aluminium door designs"
+    },
+    "/contact": {
+      "component": "Contact",
+      "title": "Free Window & Door Quote in Tirupati | Tejesh Profine",
+      "description": "Request a free quote for uPVC windows and aluminium doors in Tirupati and Chittoor. Call +91 9949360406 or send an enquiry.",
+      "keywords": "uPVC windows quote Tirupati, aluminium doors quote Chittoor"
+    },
+    "/blog": {
+      "component": "Blog",
+      "title": "Window & Door Advice and Guides | Tejesh Profine",
+      "description": "Read practical guides to uPVC windows, aluminium doors, energy efficiency, sliding systems and maintenance from the Tejesh Profine team.",
+      "keywords": "uPVC window guide, aluminium vs uPVC"
+    },
+    "/pricing": {
+      "component": "Pricing",
+      "title": "Window & Door Pricing Guide | Tejesh Profine",
+      "description": "Explore window and door pricing options. Request a tailored quote based on dimensions, glazing, materials and installation needs.",
+      "keywords": "uPVC windows price Tirupati, aluminium doors cost"
+    },
+    "/faq": {
+      "component": "FAQ",
+      "title": "Window & Door Questions Answered | Tejesh Profine",
+      "description": "Find answers to common questions about uPVC and aluminium windows, doors, installation, warranties and maintenance.",
+      "keywords": "uPVC windows FAQ, window installation questions"
+    },
+    "/careers": {
+      "component": "Careers",
+      "title": "Careers in Windows & Doors | Tejesh Profine",
+      "description": "Explore career opportunities with our windows and doors team. Contact us to discuss your experience in fabrication, installation or sales.",
+      "keywords": "Tejesh Profine careers, window fabrication jobs"
+    },
+    "/upvc-windows": {
+      "component": "UPVCWindows",
+      "title": "Kommerling uPVC Windows in Tirupati | Tejesh Profine",
+      "description": "Explore Kommerling uPVC windows for homes and offices in Tirupati and Chittoor. Compare glazing, styles and installation options and request a free quote.",
+      "keywords": "Kommerling uPVC windows Tirupati, uPVC windows Chittoor, double glazed windows"
+    },
+    "/aluminium-windows": {
+      "component": "AluminiumWindows",
+      "title": "Aluminium Windows in Chittoor | Tejesh Profine",
+      "description": "Discover aluminium windows for homes and commercial spaces in Chittoor and Tirupati. Explore designs and glazing options with our team.",
+      "keywords": "aluminium windows Chittoor, aluminium windows Tirupati"
+    },
+    "/upvc-doors": {
+      "component": "UPVCDoors",
+      "title": "uPVC Doors in Tirupati & Chittoor | Tejesh Profine",
+      "description": "Explore uPVC doors for residential and commercial spaces in Tirupati and Chittoor. Discuss styles, security features and installation with our team.",
+      "keywords": "uPVC doors Tirupati, uPVC doors Chittoor, Kommerling doors"
+    },
+    "/aluminium-doors": {
+      "component": "AluminiumDoors",
+      "title": "Aluminium Doors in Tirupati | Tejesh Profine",
+      "description": "Explore aluminium doors for residential and commercial projects in Tirupati and Chittoor. Request advice on designs, sizes and installation options.",
+      "keywords": "aluminium doors Tirupati, aluminium doors Chittoor"
+    },
+    "/sliding-systems": {
+      "component": "SlidingSystems",
+      "title": "Sliding Windows & Doors in Tirupati | Tejesh Profine",
+      "description": "Discover sliding window and door systems for balconies, patios and compact spaces. Request design and installation advice from Tejesh Profine.",
+      "keywords": "sliding windows Tirupati, sliding doors Chittoor"
+    },
+    "/facade-solutions": {
+      "component": "FacadeSolutions",
+      "title": "Facade Solutions in Andhra Pradesh | Tejesh Profine",
+      "description": "Explore facade solutions for commercial and residential buildings. Discuss design, glazing and installation requirements with our team.",
+      "keywords": "facade solutions Andhra Pradesh, aluminium facades Chittoor"
+    },
+    "/residential-projects": {
+      "component": "ResidentialProjects",
+      "title": "Residential Window & Door Projects | Tejesh Profine",
+      "description": "Explore windows and doors for villas, apartments and homes. Contact us for residential installation advice in Tirupati and Chittoor.",
+      "keywords": "residential windows Tirupati, villa uPVC windows Chittoor"
+    },
+    "/commercial-projects": {
+      "component": "CommercialProjects",
+      "title": "Commercial Window & Door Projects | Tejesh Profine",
+      "description": "Explore aluminium and uPVC window and door solutions for offices and commercial buildings. Discuss your project requirements with our team.",
+      "keywords": "commercial windows Andhra Pradesh, office aluminium doors"
+    },
+    "/industrial-projects": {
+      "component": "IndustrialProjects",
+      "title": "Industrial Window & Door Solutions | Tejesh Profine",
+      "description": "Explore window and door solutions for industrial facilities. Discuss materials, durability and installation requirements with our team.",
+      "keywords": "industrial doors Andhra Pradesh, industrial aluminium windows"
+    },
+    "/installation": {
+      "component": "Installation",
+      "title": "Window & Door Installation in Tirupati | Tejesh Profine",
+      "description": "Learn about our window and door installation process, from site measurements to fitting and finishing. Request installation help in Tirupati and Chittoor.",
+      "keywords": "uPVC installation Tirupati, window installers Chittoor"
+    },
+    "/maintenance": {
+      "component": "Maintenance",
+      "title": "uPVC Window & Door Maintenance | Tejesh Profine",
+      "description": "Learn how to care for your windows and doors. Contact us for maintenance guidance, inspections and support in Tirupati and Chittoor.",
+      "keywords": "uPVC windows maintenance, door repair Chittoor"
+    },
+    "/warranty": {
+      "component": "Warranty",
+      "title": "Window & Door Warranty Information | Tejesh Profine",
+      "description": "Review warranty information for our windows and doors. Contact our team to confirm coverage for your product and installation.",
+      "keywords": "uPVC windows warranty, Tejesh Profine warranty"
+    },
+    "/privacy-policy": {
+      "component": "PrivacyPolicy",
+      "title": "Privacy Policy | Tejesh Profine",
+      "description": "Learn how Tejesh Profine handles enquiry details, website storage, external services and requests about your personal information.",
+      "keywords": ""
+    },
+    "/terms-of-service": {
+      "component": "TermsOfService",
+      "title": "Terms of Service | Tejesh Profine",
+      "description": "Read the website terms for Tejesh Profine, including enquiries, quotations, product specifications, warranties and use of website content.",
+      "keywords": ""
+    },
+    "/landing/upvc-windows": {
+      "component": "ServiceLanding",
+      "title": "uPVC Windows Consultation & Quote | Tejesh Profine",
+      "description": "Plan Koemmerling uPVC windows for your home in Tirupati or Chittoor. Start with your room, dimensions and preferred opening style.",
+      "keywords": "uPVC Windows quote Tirupati, uPVC Windows Chittoor"
+    },
+    "/landing/aluminium-windows": {
+      "component": "ServiceLanding",
+      "title": "Aluminium Windows Consultation & Quote | Tejesh Profine",
+      "description": "Explore aluminium window configurations for homes and workspaces. Discuss finishes, glazing and installation for your project.",
+      "keywords": "Aluminium Windows quote Tirupati, Aluminium Windows Chittoor"
+    },
+    "/landing/upvc-doors": {
+      "component": "ServiceLanding",
+      "title": "uPVC Doors Consultation & Quote | Tejesh Profine",
+      "description": "Choose uPVC doors around the way you move through your home. Discuss balcony access, privacy, glazing and compatible hardware.",
+      "keywords": "uPVC Doors quote Tirupati, uPVC Doors Chittoor"
+    },
+    "/landing/aluminium-doors": {
+      "component": "ServiceLanding",
+      "title": "Aluminium Doors Consultation & Quote | Tejesh Profine",
+      "description": "Plan aluminium doors for residential or commercial use, with dimensions, finishes and access requirements considered together.",
+      "keywords": "Aluminium Doors quote Tirupati, Aluminium Doors Chittoor"
+    },
+    "/landing/sliding-systems": {
+      "component": "ServiceLanding",
+      "title": "Sliding Systems Consultation & Quote | Tejesh Profine",
+      "description": "Make the most of balcony, patio and window openings. Compare panel arrangements and track options for your available space.",
+      "keywords": "Sliding Systems quote Tirupati, Sliding Systems Chittoor"
+    },
+    "/landing/facade-solutions": {
+      "component": "ServiceLanding",
+      "title": "Facade Solutions Consultation & Quote | Tejesh Profine",
+      "description": "Bring elevations, glazing and technical requirements together. Start a facade discussion with the drawings and details of your building.",
+      "keywords": "Facade Solutions quote Tirupati, Facade Solutions Chittoor"
+    },
+    "/landing/installation": {
+      "component": "ServiceLanding",
+      "title": "Installation Consultation & Quote | Tejesh Profine",
+      "description": "Arrange window and door installation planning in Tirupati and Chittoor. Share the site, opening sizes and selected system to discuss the next steps.",
+      "keywords": "Installation quote Tirupati, Installation Chittoor"
+    },
+    "/landing/maintenance": {
+      "component": "ServiceLanding",
+      "title": "Maintenance Consultation & Quote | Tejesh Profine",
+      "description": "Get guidance for sticking hardware, worn seals, track cleaning and window or door maintenance. Tell us what you have noticed.",
+      "keywords": "Maintenance quote Tirupati, Maintenance Chittoor"
+    },
+    "/landing/services": {
+      "component": "ServicesLanding",
+      "title": "Plan Your Windows & Doors Project | Tejesh Profine",
+      "description": "Plan your complete window and door project with Tejesh Profine. Explore eight product and support services, compare options and request a tailored quotation.",
+      "keywords": "windows doors consultation Tirupati, uPVC aluminium installation Chittoor"
+    }
+  }
+}

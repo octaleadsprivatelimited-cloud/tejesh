@@ -25,3 +25,12 @@ yarn-error.log*
 # old client folder
 /client
 
+
+# Generated optimized assets and local credentials
+/public/optimized/
+.env
+.env.*
+!.env.example
+.vercel/
+
+/public/icons/

@@ -1,0 +1,236 @@
+{
+  "/brands/brigade.webp": {
+    "src": "/optimized/brands/brigade.webp.webp",
+    "width": 89,
+    "height": 102,
+    "srcSet": "/optimized/brands/brigade.webp.webp 89w"
+  },
+  "/gallery/Premium uPVC Doors .jpeg": {
+    "src": "/optimized/gallery/Premium uPVC Doors .jpeg.webp",
+    "width": 1024,
+    "height": 585,
+    "srcSet": "/optimized/gallery/Premium%20uPVC%20Doors%20.jpeg-480.webp 480w, /optimized/gallery/Premium%20uPVC%20Doors%20.jpeg-960.webp 960w, /optimized/gallery/Premium%20uPVC%20Doors%20.jpeg.webp 1024w"
+  },
+  "/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png": {
+    "src": "/optimized/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png-480.webp 480w, /optimized/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png.webp 626w"
+  },
+  "/gallery/kommerling-hero.webp": {
+    "src": "/optimized/gallery/kommerling-hero.webp.webp",
+    "width": 780,
+    "height": 640,
+    "srcSet": "/optimized/gallery/kommerling-hero.webp-480.webp 480w, /optimized/gallery/kommerling-hero.webp.webp 780w"
+  },
+  "/gallery/tejesh profine chittor kommerling.jpg": {
+    "src": "/optimized/gallery/tejesh profine chittor kommerling.jpg.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/tejesh%20profine%20chittor%20kommerling.jpg-480.webp 480w, /optimized/gallery/tejesh%20profine%20chittor%20kommerling.jpg.webp 626w"
+  },
+  "/gallery/tejesh profine chittor.jpg": {
+    "src": "/optimized/gallery/tejesh profine chittor.jpg.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/tejesh%20profine%20chittor.jpg-480.webp 480w, /optimized/gallery/tejesh%20profine%20chittor.jpg.webp 626w"
+  },
+  "/gallery/tejesh profine.jpg": {
+    "src": "/optimized/gallery/tejesh profine.jpg.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/tejesh%20profine.jpg-480.webp 480w, /optimized/gallery/tejesh%20profine.jpg.webp 626w"
+  },
+  "/gallery/upvc chittor.jpg": {
+    "src": "/optimized/gallery/upvc chittor.jpg.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/upvc%20chittor.jpg-480.webp 480w, /optimized/gallery/upvc%20chittor.jpg.webp 626w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (1).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (1).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(1).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(1).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (10).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (10).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(10).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(10).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (11).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (11).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(11).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(11).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (12).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (12).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(12).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(12).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (13).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (13).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(13).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(13).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (14).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (14).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(14).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(14).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (15).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (15).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(15).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(15).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (16).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (16).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(16).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(16).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (17).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (17).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(17).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(17).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (18).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (18).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(18).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(18).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (19).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (19).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(19).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(19).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (2).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (2).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(2).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(2).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (20).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (20).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(20).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(20).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (3).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (3).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(3).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(3).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (4).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (4).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(4).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(4).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (5).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (5).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(5).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(5).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (6).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (6).jpeg.webp",
+    "width": 526,
+    "height": 526,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(6).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(6).jpeg.webp 526w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (7).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (7).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(7).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(7).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (8).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (8).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(8).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(8).jpeg.webp 736w"
+  },
+  "/gallery/upvc windows andhra pradesh kommerling (9).jpeg": {
+    "src": "/optimized/gallery/upvc windows andhra pradesh kommerling (9).jpeg.webp",
+    "width": 736,
+    "height": 736,
+    "srcSet": "/optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(9).jpeg-480.webp 480w, /optimized/gallery/upvc%20windows%20andhra%20pradesh%20kommerling%20(9).jpeg.webp 736w"
+  },
+  "/gallery/upvc.jpg": {
+    "src": "/optimized/gallery/upvc.jpg.webp",
+    "width": 626,
+    "height": 480,
+    "srcSet": "/optimized/gallery/upvc.jpg-480.webp 480w, /optimized/gallery/upvc.jpg.webp 626w"
+  },
+  "/gallery/upvc_windows chittor.jpg": {
+    "src": "/optimized/gallery/upvc_windows chittor.jpg.webp",
+    "width": 1600,
+    "height": 1070,
+    "srcSet": "/optimized/gallery/upvc_windows%20chittor.jpg-480.webp 480w, /optimized/gallery/upvc_windows%20chittor.jpg-960.webp 960w, /optimized/gallery/upvc_windows%20chittor.jpg.webp 1600w"
+  },
+  "/logo.png": {
+    "src": "/optimized/logo.png.webp",
+    "width": 1080,
+    "height": 1080,
+    "srcSet": "/optimized/logo.png-480.webp 480w, /optimized/logo.png-960.webp 960w, /optimized/logo.png.webp 1080w"
+  },
+  "/tp-logo-transparent.png": {
+    "src": "/optimized/tp-logo-transparent.png.webp",
+    "width": 1435,
+    "height": 1096,
+    "srcSet": "/optimized/tp-logo-transparent.png-480.webp 480w, /optimized/tp-logo-transparent.png-960.webp 960w, /optimized/tp-logo-transparent.png.webp 1435w"
+  },
+  "/tp-logo.png": {
+    "src": "/optimized/tp-logo.png.webp",
+    "width": 445,
+    "height": 340,
+    "srcSet": "/optimized/tp-logo.png.webp 445w"
+  },
+  "/upvc-chittor-tejesh-profine.jpg": {
+    "src": "/optimized/upvc-chittor-tejesh-profine.jpg.webp",
+    "width": 1600,
+    "height": 800,
+    "srcSet": "/optimized/upvc-chittor-tejesh-profine.jpg-480.webp 480w, /optimized/upvc-chittor-tejesh-profine.jpg-960.webp 960w, /optimized/upvc-chittor-tejesh-profine.jpg.webp 1600w"
+  },
+  "/upvc-chittor.jpg": {
+    "src": "/optimized/upvc-chittor.jpg.webp",
+    "width": 1600,
+    "height": 952,
+    "srcSet": "/optimized/upvc-chittor.jpg-480.webp 480w, /optimized/upvc-chittor.jpg-960.webp 960w, /optimized/upvc-chittor.jpg.webp 1600w"
+  },
+  "/upvc_chittor tejesh_profine .jpg": {
+    "src": "/optimized/upvc_chittor tejesh_profine .jpg.webp",
+    "width": 1600,
+    "height": 800,
+    "srcSet": "/optimized/upvc_chittor%20tejesh_profine%20.jpg-480.webp 480w, /optimized/upvc_chittor%20tejesh_profine%20.jpg-960.webp 960w, /optimized/upvc_chittor%20tejesh_profine%20.jpg.webp 1600w"
+  },
+  "/upvc_chittor-tejesh_profine.jpg": {
+    "src": "/optimized/upvc_chittor-tejesh_profine.jpg.webp",
+    "width": 1600,
+    "height": 800,
+    "srcSet": "/optimized/upvc_chittor-tejesh_profine.jpg-480.webp 480w, /optimized/upvc_chittor-tejesh_profine.jpg-960.webp 960w, /optimized/upvc_chittor-tejesh_profine.jpg.webp 1600w"
+  },
+  "/upvc_chittor.jpg": {
+    "src": "/optimized/upvc_chittor.jpg.webp",
+    "width": 1600,
+    "height": 952,
+    "srcSet": "/optimized/upvc_chittor.jpg-480.webp 480w, /optimized/upvc_chittor.jpg-960.webp 960w, /optimized/upvc_chittor.jpg.webp 1600w"
+  },
+  "/v.venktesulu.png": {
+    "src": "/optimized/v.venktesulu.png.webp",
+    "width": 628,
+    "height": 618,
+    "srcSet": "/optimized/v.venktesulu.png-480.webp 480w, /optimized/v.venktesulu.png.webp 628w"
+  }
+}

@@ -1,0 +1,22 @@
+import React, { act } from 'react';
+import { hydrateRoot } from 'react-dom/client';
+import App from './App';
+const fs = require('fs');
+global.IS_REACT_ACT_ENVIRONMENT = true;
+const paths = [...Object.keys(require('./data/site.json').routes), ...Array.from({length:6},(_,i)=>`/blog/${i+1}`), '/does-not-exist'];
+test.each(paths)('prerendered page hydrates at %s', async route => {
+ const file = route === '/' ? 'index' : route === '/does-not-exist' ? '404' : route.slice(1);
+ const html = fs.readFileSync(`build/${file}.html`,'utf8');
+ const parsed = new DOMParser().parseFromString(html,'text/html');
+ document.body.innerHTML = '<div id="root"></div>';
+ document.getElementById('root').innerHTML = parsed.getElementById('root').innerHTML;
+ window.history.replaceState({},'', route);
+ window.scrollTo = jest.fn();
+ const errors=[]; let root;
+ const logged = jest.spyOn(console, 'error').mockImplementation((...args) => errors.push(args.join(' ')));
+ await act(async () => { root=hydrateRoot(document.getElementById('root'), <React.StrictMode><App /></React.StrictMode>,{onRecoverableError:e=>errors.push(e.message)}); await new Promise(resolve=>setTimeout(resolve,50)); });
+ await act(async () => { await new Promise(resolve=>setTimeout(resolve,50)); });
+ await act(async()=>root.unmount());
+ logged.mockRestore();
+ expect(errors).toEqual([]);
+});

@@ -8,7 +8,8 @@ const ScrollRestoration = () => {
     const storageKey = `scrollPosition_${location.pathname}`;
     
     // Restore scroll position
-    const savedPosition = sessionStorage.getItem(storageKey);
+    let savedPosition;
+    try { savedPosition = sessionStorage.getItem(storageKey); } catch { /* Storage may be disabled. */ }
     if (savedPosition) {
       const position = parseInt(savedPosition, 10);
       
@@ -32,7 +33,7 @@ const ScrollRestoration = () => {
     const saveScrollPosition = () => {
       const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
       const storageKey = `scrollPosition_${location.pathname}`;
-      sessionStorage.setItem(storageKey, scrollPosition.toString());
+      try { sessionStorage.setItem(storageKey, scrollPosition.toString()); } catch { /* Browsing still works without storage. */ }
     };
 
     // Debounced scroll handler

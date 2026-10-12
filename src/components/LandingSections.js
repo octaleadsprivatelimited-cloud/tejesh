@@ -1,0 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import landings from '../data/landingPages.json';
+export function LandingProcess() { return <section className="section-panel"><p className="eyebrow">A clear next step</p><h2>From your enquiry to an agreed plan.</h2><ol className="landing-process"><li><strong>Tell us about the space</strong><p>Share your location, approximate dimensions and preferred materials.</p></li><li><strong>Review the details</strong><p>Discuss the system, site requirements and any measurements that need confirming.</p></li><li><strong>Agree your quotation</strong><p>Review the specification, price, installation scope and timing before ordering.</p></li></ol></section>; }
+export function LandingLinks({exclude}) { return <nav className="landing-service-links" aria-label="Explore service landing pages">{landings.filter(s=>s.slug!==exclude).map(s=><Link key={s.slug} to={`/landing/${s.slug}`}>{s.title}</Link>)}</nav>; }
+export function LandingContact({title}) { return <div className="actions"><a className="btn-outline" href="tel:+919949360406">Call +91 9949360406</a><a className="text-link" href={`https://wa.me/919949360406?text=${encodeURIComponent(`Hello Tejesh Profine, I would like to discuss ${title || 'my window and door project'}.`)}`} target="_blank" rel="noopener noreferrer">Discuss on WhatsApp</a></div>; }

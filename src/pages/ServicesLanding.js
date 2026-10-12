@@ -1,0 +1,14 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import landings from '../data/landingPages.json';
+import Image from '../components/Image';
+import WhatsAppLeadForm from '../components/WhatsAppLeadForm';
+import ProductDemo from '../components/ProductDemo';
+import CompanyShowcase from '../components/CompanyShowcase';
+import { LandingProcess, LandingContact } from '../components/LandingSections';
+export default function ServicesLanding() { return <>
+ <section className="section-panel landing-hero"><div className="landing-story"><p className="eyebrow">One project. Considered together.</p><h1>Your next space starts with the right openings.</h1><p className="landing-intro">Explore windows, doors, sliding systems, facades and aftercare with Tejesh Profine. Tell us about your project in Tirupati or Chittoor and we’ll help you plan the details.</p><LandingContact /><Image className="landing-image" src="/gallery/Referenzobjekt-Neubau-Einfamilienhaus-bei-Daemmerung-Australien.png" alt="Architectural inspiration with broad glazed openings" loading="eager" fetchPriority="high" /></div><aside className="landing-quote"><p className="eyebrow">Start with your requirements</p><h2>Request a project quote</h2><p>Just your name and phone number. Continue the conversation on WhatsApp.</p><WhatsAppLeadForm idPrefix="landing-all-services" /></aside></section>
+ <CompanyShowcase /><ProductDemo />
+ <section className="section-panel"><p className="eyebrow">Explore the range</p><h2>Find the service for your space.</h2><div className="service-options landing-catalog">{landings.map(s=><article key={s.slug}><Link className="landing-service-tile" to={`/landing/${s.slug}`}><Image src={s.image} alt="" sizes="(max-width: 600px) 80vw, 40vw" /><h3>{s.title}</h3></Link></article>)}</div></section>
+ <LandingProcess /><section className="section-panel split"><div><p className="eyebrow">Before you choose</p><h2>A specification that fits your project.</h2><p>Prices and availability depend on dimensions, materials, glazing, hardware and site conditions. Ask for an itemised written quotation and applicable warranty terms before ordering.</p><div className="inline-links"><Link to="/pricing">Pricing guide</Link><Link to="/warranty">Warranty information</Link><Link to="/portfolio">Browse the gallery</Link></div></div><div className="service-questions"><h2>Getting started</h2><details><summary>Can I combine several services?</summary><p>Yes. Describe the windows, doors and installation support you need in one enquiry so the scope can be discussed together.</p></details><details><summary>What should I prepare?</summary><p>Have your location, approximate dimensions, drawings or photographs, preferred materials and timing ready for the discussion.</p></details><LandingContact /></div></section>
+ </>; }

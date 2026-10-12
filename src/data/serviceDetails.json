@@ -1,0 +1,146 @@
+[
+  {
+    "intro": "Select the opening that suits your room",
+    "options": [
+      [
+        "Casement & fixed windows",
+        "Combine opening panels for ventilation with fixed glazing where you want an uninterrupted view."
+      ],
+      [
+        "Sliding windows",
+        "Discuss sliding configurations for openings where an outward or inward sash would obstruct the space."
+      ]
+    ],
+    "planning": "Share the room type, opening dimensions, orientation and noise concerns. We can discuss Koemmerling profile options, compatible hardware and glazing for your home.",
+    "faq": [
+      [
+        "Can I choose different glazing?",
+        "Glazing should be selected alongside the frame system. Ask about compatible options and the performance of the complete installed window."
+      ],
+      [
+        "Do uPVC windows need painting?",
+        "Routine care generally involves gentle cleaning rather than painting. Follow the chosen profile manufacturer\u2019s maintenance instructions."
+      ]
+    ]
+  },
+  {
+    "intro": "Aluminium windows for your architecture",
+    "options": [
+      [
+        "Fixed & opening combinations",
+        "Plan the balance between views, ventilation and access for cleaning, with profiles sized for the opening."
+      ],
+      [
+        "Finish & hardware selection",
+        "Coordinate frame finishes and handles with the building. Confirm available finishes and compatible hardware with your quotation."
+      ]
+    ],
+    "planning": "Share elevations, opening sizes and exposure conditions. Discuss profile selection, glass, thermal requirements and installation details before fabrication.",
+    "faq": [
+      [
+        "Are aluminium windows suitable for larger openings?",
+        "Suitability depends on the selected system, span, glass and design loads. The specification must be checked for your opening."
+      ],
+      [
+        "How is thermal performance determined?",
+        "Frame construction, glazing and installation all matter. Request the performance information for the proposed system."
+      ]
+    ]
+  },
+  {
+    "intro": "uPVC doors for everyday access",
+    "options": [
+      [
+        "Balcony & patio access",
+        "Discuss the threshold, clear opening and available space for movement between indoors and outdoors."
+      ],
+      [
+        "Glazed door configurations",
+        "Review glazing and panel arrangements with privacy, daylight and compatible locking hardware in mind."
+      ]
+    ],
+    "planning": "Tell us where the door will be fitted, the opening direction, access needs and dimensions. We can help you compare suitable profile and hardware combinations.",
+    "faq": [
+      [
+        "Can the door match my windows?",
+        "Discuss compatible profiles and available finishes when selecting the window and door package."
+      ],
+      [
+        "What locking options are available?",
+        "Locking hardware depends on the chosen system. Confirm the hardware and security specification in the written quotation."
+      ]
+    ]
+  },
+  {
+    "intro": "Aluminium doors made for the opening",
+    "options": [
+      [
+        "Home & commercial access",
+        "Match the profile and hardware to how often the door will be used, its size and the required clear access."
+      ],
+      [
+        "Glazing & finish choices",
+        "Consider privacy, daylight, safety glazing and the appearance of the frame as part of the complete door specification."
+      ]
+    ],
+    "planning": "Share the intended use, dimensions, access requirements and finish preferences. Confirm any building-specific safety requirements with your project team.",
+    "faq": [
+      [
+        "Can aluminium doors be used for shop entrances?",
+        "Discuss the expected traffic, opening size, accessibility and hardware requirements to establish a suitable system."
+      ],
+      [
+        "Are standard aluminium doors fire-rated?",
+        "A fire rating applies to a tested and certified complete assembly. Do not assume a standard aluminium door meets fire-rating requirements."
+      ]
+    ]
+  },
+  {
+    "intro": "Sliding systems that make room",
+    "options": [
+      [
+        "Window sliders",
+        "Consider sliding windows when projecting sashes would interfere with walkways, furnishings or nearby openings."
+      ],
+      [
+        "Patio & balcony sliders",
+        "Plan the number of panels, usable opening, threshold and track arrangement around everyday movement."
+      ]
+    ],
+    "planning": "Share the overall opening width, panel preferences and available access. Drainage, track cleaning, glazing and hardware should be considered together.",
+    "faq": [
+      [
+        "How much of the opening will be clear?",
+        "The clear opening depends on the number of panels and tracks. Ask for the proposed configuration and dimensions with your quote."
+      ],
+      [
+        "How do I maintain the tracks?",
+        "Remove loose debris regularly, keep drainage openings clear and follow the hardware manufacturer\u2019s care guidance."
+      ]
+    ]
+  },
+  {
+    "intro": "Facades coordinated with your building",
+    "options": [
+      [
+        "Glazed building elevations",
+        "Discuss the intended appearance, daylight and glazing performance alongside the architectural drawings."
+      ],
+      [
+        "Project-specific detailing",
+        "Coordinate framing, fixings, drainage and interfaces with the structure and adjoining building materials."
+      ]
+    ],
+    "planning": "Provide elevations, structural information and project performance requirements. Facade selection requires coordination with the architect and relevant technical specialists.",
+    "faq": [
+      [
+        "What information is needed for a facade enquiry?",
+        "Share elevations, approximate dimensions, location, building use and any specified glazing or performance requirements."
+      ],
+      [
+        "Can a facade be quoted from a photograph?",
+        "A photograph helps start the discussion, but detailed dimensions, technical requirements and site information are needed for a project quotation."
+      ]
+    ]
+  }
+]
