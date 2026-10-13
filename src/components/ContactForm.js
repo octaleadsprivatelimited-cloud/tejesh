@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import services from '../data/services.json';
 import site from '../data/site.json';
-import { trackContact } from '../analytics';
+import { trackContact, trackForm } from '../analytics';
 const empty = {name: '', phone: '', email: '', service: '', message: ''};
 export default function ContactForm({compact = false, idPrefix, initialService = ''}) {
   const id = idPrefix || (compact ? 'quick-enquiry' : 'project-enquiry');
@@ -16,8 +16,9 @@ export default function ContactForm({compact = false, idPrefix, initialService =
   async function submit(e) {
     e.preventDefault();
     if (pending.current) return;
-    if (!configured) { setError('Online enquiries are temporarily unavailable. Please contact our team by phone or WhatsApp.'); setStatus('error'); return; }
+    if (!configured) { trackForm('form_error', 'formspree', 'unavailable'); setError('Online enquiries are temporarily unavailable. Please contact our team by phone or WhatsApp.'); setStatus('error'); return; }
     pending.current = true; setStatus('sending'); setError('');
+    trackForm('form_submit', 'formspree');
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 25000);
     try {
@@ -25,11 +26,14 @@ export default function ContactForm({compact = false, idPrefix, initialService =
       const result = await response.json().catch(() => { throw new Error('The form service returned an unexpected response. Please call our team to confirm receipt.'); });
       if (!response.ok || result.errors?.length || result.ok === false) {
         const message = result.errors?.map(item => item.message).filter(Boolean).join(' ');
-        throw new Error(response.status === 429 ? 'Too many enquiries were submitted. Please wait before trying again or call our team.' : message || 'Your enquiry could not be sent. Please try again or call +91 9949360406.');
+        const failure = new Error(response.status === 429 ? 'Too many enquiries were submitted. Please wait before trying again or call our team.' : message || 'Your enquiry could not be sent. Please try again or call +91 9949360406.');
+        failure.trackingType = response.status === 429 ? 'rate_limit' : 'service';
+        throw failure;
       }
-      trackContact('generate_lead');
+      trackContact('generate_lead', 'form');
       setStatus('success'); setData({...empty, service: initialService});
     } catch (err) {
+      trackForm('form_error', 'formspree', err.name === 'AbortError' ? 'timeout' : err instanceof TypeError ? 'network' : err.trackingType || 'service');
       setError(err.name === 'AbortError' ? 'The request timed out. Please call to confirm receipt before trying again.' : err instanceof TypeError ? 'Connection failed. Check your internet connection and try again, or call our team.' : err.message);
       setStatus('error');
     } finally { clearTimeout(timeout); pending.current = false; }

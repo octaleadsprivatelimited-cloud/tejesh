@@ -469,3 +469,11 @@ figcaption { font-size:.75rem; padding-top:12px; color:var(--muted); }
 /* Consent stays above contact controls, with a reachable layout on small screens. */
 .cookie-panel{position:fixed;z-index:1200;bottom:calc(76px + env(safe-area-inset-bottom,0px));left:16px;max-width:540px;width:calc(100% - 32px);max-height:65dvh;overflow:auto;border:1px solid var(--ink,#17334a);background:var(--paper,#f6f3ec);color:var(--ink,#17334a);padding:20px}
 .cookie-panel h2{font-size:1.25rem;margin:0 0 8px}.cookie-panel p{font-size:.9rem}.cookie-panel .actions{gap:8px;flex-wrap:wrap}.cookie-panel button{min-height:44px;padding:8px 12px;border:1px solid currentColor;background:transparent;font:inherit;cursor:pointer}.privacy-settings{position:fixed;z-index:50;left:8px;bottom:calc(72px + env(safe-area-inset-bottom,0px));padding:6px 10px;border:1px solid currentColor;background:var(--paper,#f6f3ec);color:var(--ink,#17334a);font-size:.75rem;cursor:pointer}
+@media(max-width:760px){
+ .cookie-panel{left:8px;width:calc(100% - 16px);max-width:400px;padding:10px;bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+ .cookie-panel h2{font-size:.8rem;line-height:1.2;margin:0 0 4px}
+ .cookie-panel p{font-size:.72rem;line-height:1.4;margin:0 0 7px}
+ .cookie-panel .actions{display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:5px}
+ .cookie-panel button{min-width:0;min-height:44px;padding:5px 3px;font-size:.7rem;line-height:1.2}
+ .privacy-settings{padding:5px 7px;font-size:.65rem}
+}

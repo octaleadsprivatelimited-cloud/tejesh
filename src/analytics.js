@@ -1,5 +1,6 @@
 import site from './data/site.json';
-import { getPageSEO, normalizePath } from './seo';
+import { getPageSEO, normalizePath, pagePaths } from './seo';
+import landings from './data/landingPages.json';
 
 const consentKey = 'tejesh-consent-v1';
 const denied = { analytics: false, advertising: false };
@@ -9,6 +10,8 @@ const adsId = process.env.REACT_APP_GOOGLE_ADS_ID || '';
 const validGa = /^G-[A-Z0-9]+$/.test(gaId);
 const validClarity = /^[a-z0-9]+$/.test(clarityId);
 const validAds = /^AW-\d+$/.test(adsId);
+const knownPaths = new Set(pagePaths);
+const knownCampaigns = new Set(['tirupati','bengaluru','hyderabad',...landings.map(service => service.slug.replace(/-/g, '_'))].map(name => `tejesh_${name}`));
 let active = denied;
 let googleStarted = false;
 let clarityStarted = false;
@@ -18,11 +21,25 @@ let previousPage = '';
 function acquisition() {
   const query = new URLSearchParams(window.location.search);
   const campaign = query.get('utm_campaign');
-  if (query.get('utm_source') === 'google' && query.get('utm_medium') === 'cpc' && /^tejesh_(tirupati|bengaluru|hyderabad)$/.test(campaign || '')) return { campaign_source: 'google', campaign_medium: 'cpc', campaign_name: campaign };
+  if (query.get('utm_source') === 'google' && query.get('utm_medium') === 'cpc' && knownCampaigns.has(campaign)) return { campaign_source: 'google', campaign_medium: 'cpc', campaign_name: campaign };
   return {};
 }
 function referringOrigin() {
   try { return new URL(document.referrer).origin + '/'; } catch { return ''; }
+}
+function measurementUrl(pathname) {
+  const page = getPageSEO(pathname);
+  const url = new URL(page.noindex ? new URL('/404', page.url).href : page.url);
+  // Only Google click identifiers are retained, and only with advertising consent.
+  // Never forward arbitrary landing-page parameters or WhatsApp message text.
+  if (active.advertising) {
+    const query = new URLSearchParams(window.location.search);
+    for (const key of ['gclid', 'gbraid', 'wbraid']) {
+      const value = query.get(key);
+      if (value && /^[A-Za-z0-9_-]{20,512}$/.test(value)) url.searchParams.set(key, value);
+    }
+  }
+  return url.href;
 }
 
 export function trackingAvailable() {
@@ -60,10 +77,10 @@ export function applyConsent(value) {
   }
   if (googleStarted) gtag('consent', 'update', googleConsent(active));
   if (googleStarted && active.analytics && validGa && !gaConfigured) {
-    gtag('config', gaId, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false, page_location: getPageSEO(window.location.pathname).url, page_referrer: referringOrigin(), ...acquisition() }); gaConfigured = true;
+    gtag('config', gaId, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false, page_location: measurementUrl(window.location.pathname), page_referrer: referringOrigin(), ...acquisition() }); gaConfigured = true;
   }
   if (googleStarted && active.advertising && validAds && !adsConfigured) {
-    gtag('config', adsId, { send_page_view: false, allow_ad_personalization_signals: false }); adsConfigured = true;
+    gtag('config', adsId, { send_page_view: false, allow_ad_personalization_signals: false, page_location: measurementUrl(window.location.pathname), page_referrer: referringOrigin() }); adsConfigured = true;
   }
   if (active.analytics && validClarity && !clarityStarted) {
     window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
@@ -82,18 +99,47 @@ export function saveConsent(value) {
 export function trackPage(pathname) {
   if (!trackingAvailable() || !active.analytics || !validGa || !googleStarted) return;
   const page = getPageSEO(pathname);
-  if (page.noindex || previousPage === page.url) return;
-  gtag('event', 'page_view', { send_to: gaId, page_title: page.title, page_location: page.url, page_referrer: previousPage || referringOrigin() });
-  previousPage = page.url;
+  const canonical = page.noindex ? new URL('/404', page.url).href : page.url;
+  if (previousPage === canonical) return;
+  const context = { page_title: page.title, page_location: page.noindex ? canonical : measurementUrl(pathname), page_referrer: previousPage || referringOrigin() };
+  // Keep automatic session/engagement events on the current virtual page too.
+  gtag('set', context);
+  gtag('event', 'page_view', { send_to: gaId, ...context });
+  previousPage = canonical;
 }
-export function trackContact(action) {
+function event(name, parameters) {
+  if (!trackingAvailable() || !active.analytics || !validGa || !googleStarted) return false;
+  const path = normalizePath(window.location.pathname);
+  if (!knownPaths.has(path)) return false;
+  gtag('event', name, { send_to: gaId, page_location: measurementUrl(path), page_path: path, ...parameters });
+  return true;
+}
+export function trackContact(action, placement = 'page') {
   if (!trackingAvailable()) return;
   const allowed = ['generate_lead', 'whatsapp_click', 'whatsapp_form_open', 'phone_click', 'map_click', 'email_click'];
   if (!allowed.includes(action)) return;
   const path = normalizePath(window.location.pathname);
-  if (!site.routes[path]) return;
+  if (!knownPaths.has(path)) return;
   // Never pass form values, link URLs, query strings, phone numbers or email addresses.
-  if (active.analytics && validGa && googleStarted) gtag('event', action, { send_to: gaId, page_location: getPageSEO(path).url, page_path: path, contact_method: action === 'generate_lead' ? 'formspree' : action.replace(/_(click|form_open)$/, '') });
+  return event(action, { contact_method: action === 'generate_lead' ? 'formspree' : action.replace(/_(click|form_open)$/, ''), placement: ['header','footer','side','bottom','hero','form','page'].includes(placement) ? placement : 'page' });
+}
+export function trackForm(action, method, errorType) {
+  if (!['form_start','form_submit','form_error'].includes(action) || !['formspree','whatsapp'].includes(method)) return false;
+  const parameters = { form_id: method, contact_method: method };
+  if (action === 'form_error') parameters.error_type = ['validation','network','timeout','rate_limit','service','unavailable'].includes(errorType) ? errorType : 'service';
+  return event(action, parameters);
+}
+export function trackInteraction(action, detail) {
+  if (action === 'navigation_click' && knownPaths.has(detail)) return event(action, { destination_path: detail });
+  if (action === 'scroll_depth' && [25,50,75,90].includes(detail)) return event(action, { percent_scrolled: detail });
+  if (action === 'section_view' && /^section_\d{1,3}$/.test(detail)) return event(action, { section_id: detail });
+  if (action === 'gallery_filter' && ['All','Windows','Doors','Systems'].includes(detail)) return event(action, { filter_name: detail });
+  if (action === 'menu_toggle' && ['open','close'].includes(detail)) return event(action, { menu_state: detail });
+  if (action === 'faq_open' && Number.isInteger(detail) && detail >= 0 && detail < 100) return event(action, { question_index: detail });
+  if (action === 'company_logo_click' && ['myhome','rajapushpa','brigade','prestige'].includes(detail)) return event(action, { company_id: detail });
+  if (['video_start','video_complete','video_pause','video_error'].includes(action)) return event(action, { video_id: 'product_demo' });
+  if (action === 'video_progress' && [25,50,75].includes(detail)) return event(action, { video_id: 'product_demo', video_percent: detail });
+  return false;
 }
 export function contactAction(href) {
   try {

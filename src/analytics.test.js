@@ -45,3 +45,41 @@ test('keeps controlled campaign attribution without forwarding arbitrary query v
   const config=window.dataLayer.map(args=>Array.from(args)).find(c=>c[0]==='config' && c[1]==='G-TEST123');
   expect(config[2].campaign_name).toBe('tejesh_hyderabad'); expect(JSON.stringify(config)).not.toContain('private@example.com');
 });
+
+test('Google click attribution requires advertising consent and excludes enquiry parameters', () => {
+  const a = load();
+  window.history.replaceState({}, '', '/landing/services?gclid=ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&email=private@example.com&text=PrivateMessage');
+  a.applyConsent({analytics:true,advertising:false}); a.trackPage('/landing/services');
+  expect(JSON.stringify(window.dataLayer)).not.toContain('ABCDEFGHIJKLMNOPQRSTUVWXYZ012345');
+  a.applyConsent({analytics:true,advertising:true}); a.trackContact('phone_click','bottom');
+  const commands = window.dataLayer.map(args => Array.from(args));
+  const contact = commands.find(c => c[1] === 'phone_click');
+  expect(contact[2].page_location).toContain('?gclid=ABCDEFGHIJKLMNOPQRSTUVWXYZ012345');
+  expect(contact[2].placement).toBe('bottom');
+  expect(JSON.stringify(commands)).not.toMatch(/private@example|PrivateMessage/);
+});
+
+test('tracks article actions, sanitizes missing-page URLs and updates virtual-page context', () => {
+  const a = load(); a.applyConsent({analytics:true,advertising:false});
+  const {pagePaths} = require('./seo');
+  const article = pagePaths.find(path => path.startsWith('/blog/'));
+  window.history.replaceState({}, '', article); a.trackPage(article); a.trackContact('phone_click');
+  window.history.replaceState({}, '', '/private@example.com'); a.trackPage('/private@example.com');
+  const commands = window.dataLayer.map(args => Array.from(args));
+  expect(commands.filter(c => c[1] === 'phone_click')).toHaveLength(1);
+  expect(commands.filter(c => c[0] === 'set' && c[1]?.page_location)).toHaveLength(2);
+  expect(commands.filter(c => c[1] === 'page_view').at(-1)[2].page_location).toBe('http://localhost/404');
+  expect(JSON.stringify(commands)).not.toContain('private@example.com');
+});
+
+test('measurement contract rejects arbitrary strings, user values and unknown routes', () => {
+  const a = load(); a.applyConsent({analytics:true,advertising:true});
+  a.trackForm('form_error','formspree','network'); a.trackInteraction('video_progress',50);
+  a.trackInteraction('navigation_click','/contact'); a.trackInteraction('gallery_filter','Windows');
+  a.trackInteraction('navigation_click','/private@example.com'); a.trackInteraction('gallery_filter','PrivateMessage');
+  a.trackInteraction('video_progress',999); a.trackForm('form_error','private@example.com','network');
+  const events = window.dataLayer.map(args => Array.from(args)).filter(c => c[0] === 'event');
+  expect(events.map(c => c[1])).toEqual(['form_error','video_progress','navigation_click','gallery_filter']);
+  expect(JSON.stringify(events)).not.toMatch(/private@example|PrivateMessage|999/);
+  expect(events.some(c => c[1] === 'conversion')).toBe(false);
+});
