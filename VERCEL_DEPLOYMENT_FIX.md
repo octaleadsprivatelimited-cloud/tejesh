@@ -24,9 +24,9 @@ Copy `.env.example` to `.env.local` for local testing. Set the same public build
 | Variable | Purpose |
 | --- | --- |
 | `REACT_APP_SITE_URL` | Canonical origin, currently `https://tejeshprofine.com`. |
-| `REACT_APP_FORMSPREE_ENDPOINT` | Exact `https://formspree.io/f/...` URL from your Formspree dashboard. |
+| `REACT_APP_FORMSPREE_ENDPOINT` | Optional override; default is the supplied `https://formspree.io/f/maeqdgzb` endpoint. |
 
-The Formspree endpoint is public and is embedded in the frontend. No SMTP account or password is needed. Rebuild after changing either value. Until an endpoint is supplied, forms display an unavailable message and phone fallback without transmitting data.
+The Formspree endpoint is public and is embedded in the frontend. No SMTP account or password is needed. Rebuild after changing either value. The supplied endpoint is configured in source so builds work without an environment override. Explicitly setting the override to an empty string disables forms with a phone fallback.
 
 In Formspree, select the intended recipient, complete any required email verification, and confirm allowed domains include the production domain and your local test origin if domain restrictions are enabled. Configure spam protection to match the integration. If your form requires an interactive CAPTCHA, its corresponding widget must be integrated before launch; the current form handles JSON submissions and displays provider errors.
 

@@ -44,8 +44,8 @@ test('mobile menu supports Escape and closes after navigating', () => {
  expect(menu).toHaveAttribute('aria-expanded','false');
 });
 
-test('missing Formspree configuration never sends an enquiry to a guessed destination', async () => {
- delete process.env.REACT_APP_FORMSPREE_ENDPOINT;
+test('explicitly blank Formspree configuration disables enquiries safely', async () => {
+ process.env.REACT_APP_FORMSPREE_ENDPOINT = '';
  global.fetch = jest.fn();
  fillForm();
  expect(await screen.findByRole('alert')).toHaveTextContent('Online enquiries are temporarily unavailable');
@@ -56,4 +56,10 @@ test('rate limiting is explained and entered data is preserved', async () => {
  fillForm();
  expect(await screen.findByRole('alert')).toHaveTextContent('Please wait before trying again');
  expect(screen.getByLabelText('Full name (required)')).toHaveValue('Test Person');
+});
+
+test('uses the configured business endpoint when no environment override exists', () => {
+ delete process.env.REACT_APP_FORMSPREE_ENDPOINT;
+ render(<MemoryRouter><ContactForm /></MemoryRouter>);
+ expect(screen.getByRole('form', {name:'Project enquiry'})).toHaveAttribute('action','https://formspree.io/f/maeqdgzb');
 });

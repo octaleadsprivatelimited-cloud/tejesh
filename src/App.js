@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import SiteLayout, { NotFound } from './components/SiteLayout';
 import SEO from './components/SEO';
+import Analytics from './components/Analytics';
 import { PageSkeleton } from './components/Editorial';
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = lazy(() => import('./pages/TermsOfService'));
@@ -34,7 +35,7 @@ const BlogPostDetail = lazy(() => import('./pages/BlogPostDetail'));
 
 export default function App() {
   return <HelmetProvider><BrowserRouter>
-    <SEO />
+    <SEO /><Analytics />
     <SiteLayout>
       <Suspense fallback={<PageSkeleton />}>
         <Routes>

@@ -2,7 +2,7 @@
   "origin": "https://tejeshprofine.com",
   "name": "Tejesh Profine",
   "phone": "+91-9949360406",
-  "email": "info@tejeshprofine.com",
+  "email": "sriadithayinteiors@gmail.com",
   "image": "/gallery/tejesh profine chittor kommerling.jpg",
   "routes": {
     "/": {
@@ -32,7 +32,7 @@
     "/contact": {
       "component": "Contact",
       "title": "Free Window & Door Quote in Tirupati | Tejesh Profine",
-      "description": "Request a free quote for uPVC windows and aluminium doors in Tirupati and Chittoor. Call +91 9949360406 or send an enquiry.",
+      "description": "Discuss windows, doors and installation for projects in Tirupati, Bengaluru or Hyderabad. Call +91 9949360406 or request a tailored quotation.",
       "keywords": "uPVC windows quote Tirupati, aluminium doors quote Chittoor"
     },
     "/blog": {
@@ -145,57 +145,84 @@
     },
     "/landing/upvc-windows": {
       "component": "ServiceLanding",
-      "title": "uPVC Windows Consultation & Quote | Tejesh Profine",
-      "description": "Plan Koemmerling uPVC windows for your home in Tirupati or Chittoor. Start with your room, dimensions and preferred opening style.",
-      "keywords": "uPVC Windows quote Tirupati, uPVC Windows Chittoor"
+      "title": "uPVC Windows Quotes | Tejesh Profine",
+      "description": "Compare Koemmerling uPVC windows, glazing and opening styles for Tirupati, Bengaluru and Hyderabad projects. Call our team for a tailored quotation.",
+      "keywords": "upvc windows Tirupati, upvc windows Bangalore, upvc windows Hyderabad"
     },
     "/landing/aluminium-windows": {
       "component": "ServiceLanding",
-      "title": "Aluminium Windows Consultation & Quote | Tejesh Profine",
-      "description": "Explore aluminium window configurations for homes and workspaces. Discuss finishes, glazing and installation for your project.",
-      "keywords": "Aluminium Windows quote Tirupati, Aluminium Windows Chittoor"
+      "title": "Aluminium Windows Quotes | Tejesh Profine",
+      "description": "Plan aluminium windows for homes and offices in Tirupati, Bengaluru and Hyderabad. Discuss frame finishes, glazing, dimensions and a tailored quote.",
+      "keywords": "aluminium windows Tirupati, aluminium windows Bangalore, aluminium windows Hyderabad"
     },
     "/landing/upvc-doors": {
       "component": "ServiceLanding",
-      "title": "uPVC Doors Consultation & Quote | Tejesh Profine",
-      "description": "Choose uPVC doors around the way you move through your home. Discuss balcony access, privacy, glazing and compatible hardware.",
-      "keywords": "uPVC Doors quote Tirupati, uPVC Doors Chittoor"
+      "title": "uPVC Doors Quotes | Tejesh Profine",
+      "description": "Explore uPVC balcony and entrance door options for Tirupati, Bengaluru and Hyderabad projects. Ask about glazing, hardware and installation scope.",
+      "keywords": "upvc doors Tirupati, upvc doors Bangalore, upvc doors Hyderabad"
     },
     "/landing/aluminium-doors": {
       "component": "ServiceLanding",
-      "title": "Aluminium Doors Consultation & Quote | Tejesh Profine",
-      "description": "Plan aluminium doors for residential or commercial use, with dimensions, finishes and access requirements considered together.",
-      "keywords": "Aluminium Doors quote Tirupati, Aluminium Doors Chittoor"
+      "title": "Aluminium Doors Quotes | Tejesh Profine",
+      "description": "Request an aluminium door quote for projects in Tirupati, Bengaluru and Hyderabad. Discuss opening sizes, finishes, access and fitting requirements.",
+      "keywords": "aluminium doors Tirupati, aluminium doors Bangalore, aluminium doors Hyderabad"
     },
     "/landing/sliding-systems": {
       "component": "ServiceLanding",
-      "title": "Sliding Systems Consultation & Quote | Tejesh Profine",
-      "description": "Make the most of balcony, patio and window openings. Compare panel arrangements and track options for your available space.",
-      "keywords": "Sliding Systems quote Tirupati, Sliding Systems Chittoor"
+      "title": "Sliding Windows & Doors Quotes | Tejesh Profine",
+      "description": "Compare sliding windows and balcony doors for Tirupati, Bengaluru and Hyderabad projects. Plan panel layouts, tracks, glazing and installation.",
+      "keywords": "sliding systems Tirupati, sliding systems Bangalore, sliding systems Hyderabad"
     },
     "/landing/facade-solutions": {
       "component": "ServiceLanding",
-      "title": "Facade Solutions Consultation & Quote | Tejesh Profine",
-      "description": "Bring elevations, glazing and technical requirements together. Start a facade discussion with the drawings and details of your building.",
-      "keywords": "Facade Solutions quote Tirupati, Facade Solutions Chittoor"
+      "title": "Facade & Glazing Project Quotes | Tejesh Profine",
+      "description": "Discuss facade glazing for projects in Tirupati, Bengaluru and Hyderabad. Share your elevations and requirements for a project-specific quotation.",
+      "keywords": "facade solutions Tirupati, facade solutions Bangalore, facade solutions Hyderabad"
     },
     "/landing/installation": {
       "component": "ServiceLanding",
-      "title": "Installation Consultation & Quote | Tejesh Profine",
-      "description": "Arrange window and door installation planning in Tirupati and Chittoor. Share the site, opening sizes and selected system to discuss the next steps.",
-      "keywords": "Installation quote Tirupati, Installation Chittoor"
+      "title": "Window & Door Installation Quotes | Tejesh Profine",
+      "description": "Plan window and door installation for your Tirupati, Bengaluru or Hyderabad project. Confirm site access, measurements, scope and availability.",
+      "keywords": "installation Tirupati, installation Bangalore, installation Hyderabad"
     },
     "/landing/maintenance": {
       "component": "ServiceLanding",
-      "title": "Maintenance Consultation & Quote | Tejesh Profine",
-      "description": "Get guidance for sticking hardware, worn seals, track cleaning and window or door maintenance. Tell us what you have noticed.",
-      "keywords": "Maintenance quote Tirupati, Maintenance Chittoor"
+      "title": "Window & Door Maintenance Enquiries | Tejesh Profine",
+      "description": "Ask about window and door maintenance for Tirupati, Bengaluru and Hyderabad projects. Discuss seals, tracks and hardware; confirm local availability.",
+      "keywords": "maintenance Tirupati, maintenance Bangalore, maintenance Hyderabad"
     },
     "/landing/services": {
       "component": "ServicesLanding",
-      "title": "Plan Your Windows & Doors Project | Tejesh Profine",
-      "description": "Plan your complete window and door project with Tejesh Profine. Explore eight product and support services, compare options and request a tailored quotation.",
-      "keywords": "windows doors consultation Tirupati, uPVC aluminium installation Chittoor"
+      "title": "Windows & Doors Project Quotes | Tejesh Profine",
+      "description": "Compare uPVC windows, aluminium doors and installation for Tirupati, Bengaluru and Hyderabad projects. Call +91 9949360406 to discuss a quotation.",
+      "keywords": "uPVC windows Tirupati, aluminium doors Bangalore, windows doors Hyderabad, window installation quote"
     }
+  },
+  "formspreeEndpoint": "https://formspree.io/f/maeqdgzb",
+  "enquiryAreas": [
+    "Tirupati",
+    "Chittoor",
+    "Bengaluru",
+    "Hyderabad"
+  ],
+  "mapsUrl": "https://www.google.com/maps?cid=11671516534367636887",
+  "address": {
+    "streetAddress": "HGP9+279, Desamma Nagar",
+    "addressLocality": "Gajulamandyam",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "517520",
+    "addressCountry": "IN"
+  },
+  "openingHours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "09:30",
+    "closes": "22:30"
   }
 }

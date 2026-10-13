@@ -4,14 +4,32 @@
   "name": "Tejesh Profine",
   "url": "https://tejeshprofine.com/",
   "telephone": "+91-9949360406",
-  "email": "info@tejeshprofine.com",
+  "email": "sriadithayinteiors@gmail.com",
   "image": "https://tejeshprofine.com/gallery/tejesh%20profine%20chittor%20kommerling.jpg",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Tirupati",
+    "streetAddress": "HGP9+279, Desamma Nagar",
+    "addressLocality": "Gajulamandyam",
     "addressRegion": "Andhra Pradesh",
+    "postalCode": "517520",
     "addressCountry": "IN"
   },
+  "hasMap": "https://www.google.com/maps?cid=11671516534367636887",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:30",
+      "closes": "22:30"
+    }
+  ],
   "areaServed": [
     {
       "@type": "State",

@@ -1,5 +1,6 @@
 import site from './data/site.json';
 import posts from './data/blogPosts';
+import landings from './data/landingPages.json';
 
 export const origin = (process.env.REACT_APP_SITE_URL || site.origin).replace(/\/$/, '');
 export const absoluteUrl = path => new URL(path, `${origin}/`).href;
@@ -14,12 +15,15 @@ export function getPageSEO(pathname) {
   const title = article ? `${article.title} | ${site.name}` : route?.title || `Page Not Found | ${site.name}`;
   const description = article?.excerpt || route?.description || 'This page could not be found. Explore our windows, doors and installation services.';
   const url = absoluteUrl(path);
-  const image = absoluteUrl(article?.image || site.image);
+  const service = landings.find(item => path === `/${item.slug}` || path === `/landing/${item.slug}`);
+  const image = absoluteUrl(article?.image || service?.image || site.image);
   const businessId = `${origin}/#business`;
   const graph = [
     { '@type': 'LocalBusiness', '@id': businessId, name: site.name,
       url: `${origin}/`, telephone: site.phone, email: site.email, image: absoluteUrl(site.image),
-      address: { '@type': 'PostalAddress', addressLocality: 'Tirupati', addressRegion: 'Andhra Pradesh', addressCountry: 'IN' },
+      address: { '@type': 'PostalAddress', ...site.address },
+      hasMap: site.mapsUrl,
+      openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: site.openingHours.days, opens: site.openingHours.opens, closes: site.openingHours.closes }],
       areaServed: ['Andhra Pradesh', 'Tamil Nadu', 'Karnataka'].map(name => ({ '@type': 'State', name })) },
     { '@type': 'WebSite', '@id': `${origin}/#website`, name: site.name, url: `${origin}/`, publisher: { '@id': businessId } },
     { '@type': 'WebPage', '@id': `${url}#webpage`, url, name: title, description,
@@ -37,7 +41,8 @@ export function getPageSEO(pathname) {
   const services = ['/upvc-windows', '/upvc-doors', '/aluminium-windows', '/aluminium-doors', '/sliding-systems', '/facade-solutions', '/installation', '/maintenance'];
   if (services.includes(path) || (path.startsWith('/landing/') && path !== '/landing/services' && !missing)) graph.push({ '@type': 'Service', name: title.split(' | ')[0], description,
     url, provider: { '@id': businessId }, areaServed: { '@type': 'AdministrativeArea', name: 'Andhra Pradesh' } });
+  if (path.startsWith('/landing/') && service?.faq?.length) graph.push({ '@type': 'FAQPage', '@id': `${url}#questions`, mainEntity: service.faq.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) });
   return { title, description, keywords: route?.keywords || article?.category || '', url, image,
-    imageAlt: article?.title || 'Tejesh Profine windows and doors', article, noindex: missing,
+    imageAlt: article?.title || (service ? `${service.title} collection reference` : 'Tejesh Profine windows and doors'), article, noindex: missing,
     schema: { '@context': 'https://schema.org', '@graph': graph } };
 }

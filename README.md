@@ -54,11 +54,11 @@ The audit removed invented testimonials, social placeholders, project counts, fi
 
 Validation includes 906 internal links, unique titles/descriptions, favicon and image assets, form success/server/network failure behavior, menu interactions, server routes and hydration of all prerendered pages. Browser checks covered all 29 pages plus the 404 at 320, 480, 768 and 1440 CSS pixels without document overflow. The 320px check used same-origin frames because the browser's viewport override was affected by its display scaling. Both WhatsApp and Octaleads external links responded HTTP 200 during the audit.
 
-After a build, `npm test` includes hydration tests against `build/`, so rebuild after editing page markup. Set REACT_APP_FORMSPREE_ENDPOINT to your own Formspree endpoint and rebuild to enable enquiry delivery. No SMTP credentials are required and no fake success is shown. Local checks cannot establish Formspree account activation or real inbox delivery or production Core Web Vitals.
+After a build, `npm test` includes hydration tests against `build/`, so rebuild after editing page markup. The supplied Formspree endpoint is configured in `src/data/site.json`; `REACT_APP_FORMSPREE_ENDPOINT` optionally overrides it after a rebuild. No SMTP credentials are required and no fake success is shown. Local checks cannot establish Formspree account activation or real inbox delivery or production Core Web Vitals.
 
 ## Formspree enquiries
 
-Both enquiry forms submit directly to the Formspree endpoint configured by `REACT_APP_FORMSPREE_ENDPOINT`. Copy `.env.example` to `.env.local`, add the form URL from your own dashboard, and rebuild. Blank configuration shows a phone/WhatsApp fallback. No account ID is guessed. The privacy policy identifies Formspree as the form processor. Confirm the recipient, allowed domains and any CAPTCHA settings in the Formspree dashboard before launch.
+Main-site enquiry forms submit to the supplied `https://formspree.io/f/maeqdgzb` endpoint, stored as public configuration in `src/data/site.json`. An optional `REACT_APP_FORMSPREE_ENDPOINT` build-time setting overrides it, including on Vercel. Explicitly setting that override to an empty string disables submissions and shows a phone/WhatsApp fallback. The privacy policy identifies Formspree as the form processor. Confirm the recipient, allowed domains and any CAPTCHA settings in the Formspree dashboard before launch.
 
 ## Landing pages
 
@@ -73,8 +73,22 @@ The company showcase displays user-authorized official logos, without testimonia
 - Brigade: logo asset linked from https://www.brigadegroup.com/
 - Prestige: logo asset linked from https://www.prestigeconstructions.com/
 
-Landing-page floating contacts provide Google Maps search for the business, a telephone link and WhatsApp. A verified Maps place URL can replace the search link once available.
+Landing-page floating contacts provide the verified Google Business Profile Maps link, a telephone link and WhatsApp.
 
 ### Transparent brand logo
 
 Header and footer use `public/tp-logo-transparent.png`, derived from the original `public/tp-logo.png` with the built-in image generation editor. The original remains available. Edit prompt: remove only the white and gray background and rectangular tile, including background inside the mark; preserve the existing gold TP monogram geometry, beveled texture, colors, perspective and proportions; add no text, shapes or shadows; output genuine transparent alpha. The normal image build produces optimized WebP assets that retain transparency.
+
+### Analytics and paid-search preparation
+
+Public build-time IDs are configured through `REACT_APP_GA4_ID`, `REACT_APP_CLARITY_ID`, `REACT_APP_GOOGLE_ADS_ID`. Blank IDs disable the corresponding integration. `REACT_APP_TRACKING_ENABLED` must be `true` after account checks; it is `true` for the verified GA4 and Clarity projects. The verified GA4 web stream is `16118121659`, measurement ID `G-KPX0DJJLQH`. Use IDs verified in the **sriadithayinteiors@gmail.com** business accounts, never IDs from another signed-in profile. Scripts only load on the configured production hostname, after the visitor's consent; localhost and preview hosts do not collect traffic. Rebuild after changing these settings.
+
+GA4 Enhanced Measurement is disabled. Keep Enhanced Measurement off (especially history-based page views, outbound links and form interactions) for this stream. The app sends one manual `page_view` per route transition, with clean canonical URLs. This avoids duplicates and prevents WhatsApp prefilled messages from entering automatic outbound-link reports. The current advertising goal is calls only. Keep form and phone-click events secondary in Ads. It fires only after a successful Formspree response. `whatsapp_form_open`, `whatsapp_click`, `phone_click`, `map_click` and `email_click` are secondary intent events, not proof of a completed enquiry. Direct Ads conversion and a GA4 import must not both be primary for the same enquiry. Enhanced conversions and remarketing are not configured.
+
+Clarity uses Consent V2 and masks both enquiry forms. Keep strict masking enabled in the Clarity project. Privacy choices are stored for 180 days; withdrawal reloads the page to unload existing scripts. Validate consent, route navigation and a controlled test submission using GA4 DebugView/Tag Assistant after deployment. Local unit tests validate the event contract without contacting Google, Clarity or Formspree.
+
+The `marketing/` folder contains paused search-ad drafts, exact/phrase keyword suggestions, negative keywords and source-linked competitor research. These are local planning files, not evidence of uploaded or live campaigns. The user authorized a maximum gross daily budget of INR 300 including GST and will fund the account later. A single standard Search campaign draft uses INR 127.11 average net/day to stay below INR 300 on a 2x-spend day at 18% GST. No campaign is launched. Target presence in Tirupati, Bengaluru and Hyderabad; confirm additional corridor locations before adding them.
+
+Deployment check: the Chrome Vercel dashboard observed on 2026-10-13 connects `tejeshprofine.com` to project `tejesh-profines-projects/5`, repository `tejeshprofine/5`. This checkout's origin is `octaleadsprivatelimited-cloud/tejesh`. The existing production project is linked using a task-specific Vercel CLI login verified as sriadithayinteiors@gmail.com. Deploy this checkout directly with the CLI; Git pushes to this origin do not update the connected tejeshprofine/5 repository.
+
+Business contact and enquiry delivery email: **sriadithayinteiors@gmail.com**. Clarity project **yx070si4fg**, strict masking enabled. Ads account **168-183-2284**; invitation to Octaleads MCC **506-089-4911** sent and left pending at the user’s request. No ad spend started.

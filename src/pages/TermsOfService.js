@@ -6,5 +6,5 @@ export default function TermsOfService() { return <ArticlePage title="Terms of s
  ['Warranty and aftercare', 'The written terms supplied for your selected product and installation define warranty coverage. Consult those documents and the manufacturer’s care instructions.'],
  ['Appropriate use', 'Provide accurate enquiry details and use the website lawfully. Do not submit abusive material, misuse the contact form or interfere with the website’s operation.'],
  ['Content and external links', 'Brand names and product imagery belong to their respective owners. External services, including WhatsApp, operate under their own terms. Contact us for permission before reusing website content.'],
- ['Questions and applicable rights', 'Contact info@tejeshprofine.com with website or service questions. These website terms do not replace your written order or limit rights that cannot be excluded under applicable law.']
- ]}><p><a href="mailto:info@tejeshprofine.com?subject=Terms%20enquiry">Contact us about these terms</a></p></ArticlePage>; }
+ ['Questions and applicable rights', 'Contact sriadithayinteiors@gmail.com with website or service questions. These website terms do not replace your written order or limit rights that cannot be excluded under applicable law.']
+ ]}><p><a href="mailto:sriadithayinteiors@gmail.com?subject=Terms%20enquiry">Contact us about these terms</a></p></ArticlePage>; }
