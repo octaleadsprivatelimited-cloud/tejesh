@@ -48,7 +48,8 @@
     "stream_name": "Tejesh Profine web",
     "url": "https://tejeshprofine.com",
     "status": "Enhanced Measurement disabled; email and six enquiry URL keys redacted; consent-gated production integration configured",
-    "property_id": "558646268"
+    "property_id": "558646268",
+    "collection": "Live landing-page view verified in Realtime"
   },
   "ads_account_id": "168-183-2284",
   "mcc": {
@@ -70,5 +71,17 @@
     "endpoint": "https://formspree.io/f/maeqdgzb",
     "delivery_email": "sriadithayinteiors@gmail.com",
     "status": "Recipient verified in Formspree workflow"
+  },
+  "deployment": {
+    "project": "tejesh-profines-projects/5",
+    "status": "Live; 38 pages and 404 verified",
+    "url": "https://tejeshprofine.com",
+    "git_source": "tejeshprofine/5",
+    "checkout_origin": "octaleadsprivatelimited-cloud/tejesh",
+    "automatic_deployment_note": "Vercel GitHub identity lacks write/admin access to checkout origin; direct CLI deploy used"
+  },
+  "search_console": {
+    "property": "sc-domain:tejeshprofine.com",
+    "status": "Ownership auto verified; sitemap successfully submitted; 38 discovered pages"
   }
 }

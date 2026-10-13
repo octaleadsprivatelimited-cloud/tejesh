@@ -1,10 +1,10 @@
 # Vercel deployment
 
-The repository is prepared locally. Publishing requires connecting the GitHub repository to a Vercel project with access to that repository. No deployment is performed by these local changes.
+Production was deployed on 2026-10-13 to `tejesh-profines-projects/5` using the Vercel CLI authenticated as `sriadithayinteiors@gmail.com`. The live canonical origin is `https://tejeshprofine.com`. All 38 rendered pages and the custom 404 were checked over HTTPS.
 
 ## Project configuration
 
-Import `octaleadsprivatelimited-cloud/tejesh` and select the branch you intend to deploy. Use repository root `.`. `vercel.json` sets:
+This checkout is `octaleadsprivatelimited-cloud/tejesh`, branch `main`. The existing Vercel Git integration points to `tejeshprofine/5`; changing it to this checkout was denied because the connected Vercel GitHub identity lacks repository write/admin access. Direct CLI deployment works, but pushes to this checkout do not trigger that existing integration. Use repository root `.`. `vercel.json` sets:
 
 - Node 24 via `package.json` (consistent with `.nvmrc`).
 - Install: `npm ci --legacy-peer-deps` using the committed lockfile.
@@ -51,3 +51,12 @@ For preview deployments, `scripts/build.cjs` reads `VERCEL_ENV` and sets `REACT_
 - [Google supported meta tags](https://developers.google.com/search/docs/crawling-indexing/special-tags)
 
 - [Formspree JavaScript integration](https://help.formspree.io/articles/building-your-form/submit-forms-with-javascript-ajax)
+
+## Verified cloud setup
+
+- GA4 `G-KPX0DJJLQH`, property `558646268`: a live page view appeared in Realtime. Enhanced Measurement is disabled, with email and enquiry-query redaction enabled.
+- Clarity `yx070si4fg`: the production tag loads after analytics consent; strict masking is enabled. Dashboard processing may lag behind installation.
+- Formspree `maeqdgzb`: enabled; workflow recipient verified as `sriadithayinteiors@gmail.com`.
+- Search Console: domain ownership auto verified through the existing DNS record. Updated sitemap accepted with 38 discovered pages.
+- Vercel domain settings: apex serves production; www redirects permanently to apex. The earlier reciprocal redirect conflict was fixed.
+- Google Ads `168-183-2284`: no campaign launched; billing setup incomplete. User will add funds later. Octaleads MCC `506-089-4911` invitation sent and left pending at the user’s explicit request.

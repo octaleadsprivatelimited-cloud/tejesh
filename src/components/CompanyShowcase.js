@@ -12,22 +12,37 @@ export default function CompanyShowcase() {
   if (typeof window.matchMedia !== 'function') return;
   const mobile = window.matchMedia('(max-width:900px)');
   const reduced = window.matchMedia('(prefers-reduced-motion:reduce)');
-  let frame, previous, position = 0;
+  let frame, previous, position = strip.current?.scrollLeft || 0, inView = true;
+  const running = () => mobile.matches && !reduced.matches && !paused && inView && !document.hidden;
   const move = time => {
    const element = strip.current;
-   if (element && mobile.matches && !reduced.matches && !paused && !element.contains(document.activeElement)) {
+   if (element && running()) {
     const maximum = element.scrollWidth - element.clientWidth;
     if (maximum > 0) {
      position += previous ? Math.min(time - previous, 50) * .025 : 0;
      if (position > maximum + 30) position = -30;
      element.scrollLeft = Math.max(0, Math.min(position, maximum));
     }
-   } else if (element) position = element.scrollLeft;
+   }
    previous = time;
    frame = requestAnimationFrame(move);
   };
-  frame = requestAnimationFrame(move);
-  return () => cancelAnimationFrame(frame);
+  const sync = () => {
+   cancelAnimationFrame(frame);
+   previous = undefined;
+   if (running()) frame = requestAnimationFrame(move);
+  };
+  const observer = typeof IntersectionObserver === 'function' ? new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; sync(); }) : null;
+  observer?.observe(strip.current);
+  mobile.addEventListener('change', sync);
+  reduced.addEventListener('change', sync);
+  document.addEventListener('visibilitychange', sync);
+  sync();
+  return () => {
+   cancelAnimationFrame(frame); observer?.disconnect();
+   mobile.removeEventListener('change', sync); reduced.removeEventListener('change', sync);
+   document.removeEventListener('visibilitychange', sync);
+  };
  }, [paused]);
- return <section className="section-panel company-showcase" aria-label="Company logos"><div ref={strip} className="company-logos" tabIndex={0} role="region" aria-label="Company logos, swipe to explore" onPointerDown={() => setPaused(true)} onKeyDown={() => setPaused(true)}>{companies.map(c=><a key={c.name} href={c.url} target="_blank" rel="noopener noreferrer" aria-label={`${c.name} official website`}><img src={c.src} alt={c.name} width="180" height="90" loading="lazy" decoding="async" /><span>{c.name}</span></a>)}</div><button className="company-scroll-control" type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? 'Resume scrolling' : 'Pause scrolling'}</button></section>;
+ return <section className="section-panel company-showcase" aria-label="Company logos"><div ref={strip} className="company-logos" tabIndex={0} role="region" aria-label="Company logos, swipe to explore" onPointerDown={() => setPaused(true)} onFocusCapture={() => setPaused(true)} onKeyDown={() => setPaused(true)}>{companies.map(c=><a key={c.name} href={c.url} target="_blank" rel="noopener noreferrer" aria-label={`${c.name} official website`}><img src={c.src} alt={c.name} width="180" height="90" loading="lazy" decoding="async" /><span>{c.name}</span></a>)}</div><button className="company-scroll-control" type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? 'Resume scrolling' : 'Pause scrolling'}</button></section>;
 }
