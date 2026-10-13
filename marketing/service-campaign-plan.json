@@ -1,0 +1,108 @@
+{
+  "account_id": "168-183-2284",
+  "status": "Local import plan; verify Google Ads preview before applying",
+  "total_average_daily_budget_net_inr": 127.11,
+  "maximum_daily_gross_at_2x_and_18pct_gst_inr": 299.98,
+  "all_entities_paused": true,
+  "location_mode_required": "Presence only; verify after import because the template has no geo-target-type field",
+  "call_hours": "Monday-Saturday 09:30-22:30 Asia/Kolkata",
+  "primary_goal": "Qualified calls from ads, 60-second minimum where call reporting is supported",
+  "campaigns": [
+    {
+      "name": "Tejesh | uPVC Windows | Search Calls",
+      "service": "upvc-windows",
+      "budget_net_inr": 40,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/upvc-windows",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Aluminium Windows | Search Calls",
+      "service": "aluminium-windows",
+      "budget_net_inr": 20,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/aluminium-windows",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | uPVC Doors | Search Calls",
+      "service": "upvc-doors",
+      "budget_net_inr": 20,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/upvc-doors",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Aluminium Doors | Search Calls",
+      "service": "aluminium-doors",
+      "budget_net_inr": 12,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/aluminium-doors",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Sliding Systems | Search Calls",
+      "service": "sliding-systems",
+      "budget_net_inr": 15,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/sliding-systems",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Facade Solutions | Search Calls",
+      "service": "facade-solutions",
+      "budget_net_inr": 8,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/facade-solutions",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Installation | Search Calls",
+      "service": "installation",
+      "budget_net_inr": 7,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/installation",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    },
+    {
+      "name": "Tejesh | Maintenance | Search Calls",
+      "service": "maintenance",
+      "budget_net_inr": 5.11,
+      "status": "Paused",
+      "landing_page": "https://tejeshprofine.com/landing/maintenance",
+      "ad_groups": [
+        "Suppliers and locations",
+        "Styles and applications",
+        "Price and quotation"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "status": "Prepared only; do not launch. User will fund later.",
+  "status": "Configured in Google Ads; seven campaigns eligible and learning, uPVC Windows held until the one-time 14 October budget-reset restart",
   "prepared_on": "2026-10-13",
   "account_email": "sriadithayinteiors@gmail.com",
   "business_size": "11\u2013100 employees (user confirmed)",
@@ -9,10 +9,10 @@
     "Hyderabad"
   ],
   "location_mode": "Presence: people in or regularly in targeted locations",
-  "bidding": "Prepare Maximize Clicks without target CPA; review forecasts before launch. Keep campaign paused until funding and owner review.",
+  "bidding": "Maximize conversions, without target CPA; account-default Phone call leads only",
   "network": "Google Search; initially exclude Display and Search Partners",
-  "launch_scope": "Single Search campaign; city-specific ad groups for uPVC windows and doors first. Additional service groups remain paused until coverage and demand confirmed.",
-  "conversion_primary": "Qualified calls from ads using a call asset and Google forwarding number, where supported. Use 60 second minimum call duration. Verify call reporting eligibility in the account; do not count website phone clicks as completed calls.",
+  "launch_scope": "Eight separate service Search campaigns; 24 ad groups; 496 exact and phrase keywords; 24 responsive search ads",
+  "conversion_primary": "Calls from ads: Primary, minimum 60 seconds, One conversion per ad interaction; Business profile - Tracked call is Google-managed. Call reporting enabled.",
   "conversion_secondary": [
     "Website phone clicks",
     "Form enquiries",
@@ -20,10 +20,9 @@
     "Map clicks"
   ],
   "launch_dependencies": [
-    "Owner completes billing and advertiser verification if required; no funds required for local planning",
-    "Campaign and real call conversion configured in Ads dashboard when accessible",
-    "User requested MCC invitation stay pending",
-    "Review and launch only when funded"
+    "Real traffic is needed to verify completed calls and assess performance",
+    "User requested Octaleads MCC invitation remain pending",
+    "Tax form left unchanged at latest user request"
   ],
   "competitor_research": [
     {
@@ -49,7 +48,7 @@
     "url": "https://tejeshprofine.com",
     "status": "Enhanced Measurement disabled; email and six enquiry URL keys redacted; consent-gated production integration configured",
     "property_id": "558646268",
-    "collection": "Live landing-page view verified in Realtime"
+    "collection": "Production page_view, navigation_click, section_view, scroll_depth and video_progress verified in Realtime"
   },
   "ads_account_id": "168-183-2284",
   "mcc": {
@@ -59,7 +58,7 @@
   },
   "daily_budget_gross_max_inr": 300,
   "average_daily_budget_net_inr": 127.11,
-  "budget_note": "A single standard Search campaign can spend up to 2 times its average daily budget. At 18% GST, 2 \u00d7 127.11 \u00d7 1.18 = INR 299.98. Do not run multiple campaigns with this budget each. User will add funds later; no campaign launched.",
+  "budget_note": "Combined eight-campaign average net daily budgets total INR 127.11. 2 x 127.11 x 1.18 = INR 299.98. The uPVC Windows campaign is held on 13 October because Google retains the higher earlier budget as that day\u2019s ceiling. One-time rule 62171715 resumes it on 14 October between 09:00 and 10:00 IST.",
   "ad_schedule": "Monday to Saturday 09:30\u201322:30 Asia/Kolkata, based on verified Google Business Profile hours. Sunday closed.",
   "clarity": {
     "project_id": "yx070si4fg",
@@ -83,5 +82,100 @@
   "search_console": {
     "property": "sc-domain:tejeshprofine.com",
     "status": "Ownership auto verified; sitemap successfully submitted; 38 discovered pages"
-  }
+  },
+  "keywords": {
+    "positive": 496,
+    "match_types": [
+      "Exact",
+      "Phrase"
+    ],
+    "broad_match": false,
+    "shared_negative_list": "Tejesh | Call lead quality exclusions",
+    "shared_negative_terms": 40,
+    "shared_negative_list_id": "12269879404",
+    "campaigns_covered": 8,
+    "blanket_negatives_corrected": [
+      "free",
+      "installation",
+      "installer",
+      "maintenance",
+      "repair"
+    ]
+  },
+  "call_asset": {
+    "phone": "+919949360406",
+    "level": "Account",
+    "status": "Eligible"
+  },
+  "restart_rule": {
+    "id": "62171715",
+    "campaign": "Tejesh | uPVC Windows | Search Calls",
+    "date": "2026-10-14",
+    "time_window": "09:00-10:00 Asia/Kolkata",
+    "frequency": "Once",
+    "email_results": "Only changes or errors to business account"
+  },
+  "google_checks": {
+    "ads_auto_tagging": true,
+    "call_reporting": true,
+    "calls_from_ads_minimum_seconds": 60,
+    "calls_from_ads_count": "One",
+    "ga4_secondary_conversions": 6,
+    "tax_form": "Left unchanged by user request",
+    "location_mode": "Presence only saved separately for all eight campaigns"
+  },
+  "notification": {
+    "automation_id": "tejesh-ads-completion-notification",
+    "purpose": "Notify on completion, restart problems or actionable review changes"
+  },
+  "campaigns": [
+    {
+      "service": "upvc-windows",
+      "campaign": "Tejesh | uPVC Windows | Search Calls",
+      "average_daily_budget_net_inr": 40,
+      "landing_page": "https://tejeshprofine.com/landing/upvc-windows"
+    },
+    {
+      "service": "aluminium-windows",
+      "campaign": "Tejesh | Aluminium Windows | Search Calls",
+      "average_daily_budget_net_inr": 20,
+      "landing_page": "https://tejeshprofine.com/landing/aluminium-windows"
+    },
+    {
+      "service": "upvc-doors",
+      "campaign": "Tejesh | uPVC Doors | Search Calls",
+      "average_daily_budget_net_inr": 20,
+      "landing_page": "https://tejeshprofine.com/landing/upvc-doors"
+    },
+    {
+      "service": "aluminium-doors",
+      "campaign": "Tejesh | Aluminium Doors | Search Calls",
+      "average_daily_budget_net_inr": 12,
+      "landing_page": "https://tejeshprofine.com/landing/aluminium-doors"
+    },
+    {
+      "service": "sliding-systems",
+      "campaign": "Tejesh | Sliding Systems | Search Calls",
+      "average_daily_budget_net_inr": 15,
+      "landing_page": "https://tejeshprofine.com/landing/sliding-systems"
+    },
+    {
+      "service": "facade-solutions",
+      "campaign": "Tejesh | Facade Solutions | Search Calls",
+      "average_daily_budget_net_inr": 8,
+      "landing_page": "https://tejeshprofine.com/landing/facade-solutions"
+    },
+    {
+      "service": "installation",
+      "campaign": "Tejesh | Installation | Search Calls",
+      "average_daily_budget_net_inr": 7,
+      "landing_page": "https://tejeshprofine.com/landing/installation"
+    },
+    {
+      "service": "maintenance",
+      "campaign": "Tejesh | Maintenance | Search Calls",
+      "average_daily_budget_net_inr": 5.11,
+      "landing_page": "https://tejeshprofine.com/landing/maintenance"
+    }
+  ]
 }
