@@ -22,7 +22,13 @@ the Gajulamandyam showroom, avoiding unrelated locations. Ads and call assets
 were eligible when checked. Eligibility is not evidence of impressions or calls;
 the account still needs real traffic for a performance assessment.
 
-## Budget protection
+## Current audit — 16 October 2026
+
+All eight campaigns are enabled and use one Maximize clicks portfolio strategy linked to one shared INR 127.11/day budget. This supersedes the individual allocation below without changing the total. The uPVC Windows Price and quotation ad has call-focused copy (Good strength in the editor).
+
+A new primary `Calls from website | 60s` action counts once per interaction, with a 30-day click window. Its consent-gated tag and call-first landing-page changes are prepared in this source; publication to the existing Vercel project is pending. Phone clicks remain secondary. No completed website call has been verified. Advertiser verification is due 14 November 2026.
+
+## Original budget protection
 
 The combined average net budgets are INR 127.11 per day, split across services as
 40/20/20/12/15/8/7/5.11. With Google's usual 2x daily spending ceiling and 18% GST,

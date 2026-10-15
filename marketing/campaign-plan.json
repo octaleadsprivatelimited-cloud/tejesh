@@ -1,18 +1,18 @@
 {
-  "status": "Configured in Google Ads; seven campaigns eligible and learning, uPVC Windows held until the one-time 14 October budget-reset restart",
+  "status": "All eight Search campaigns enabled; shared budget and portfolio saved 16 October 2026; website-call tag deployment pending",
   "prepared_on": "2026-10-13",
   "account_email": "sriadithayinteiors@gmail.com",
-  "business_size": "11\u2013100 employees (user confirmed)",
+  "business_size": "11–100 employees (user confirmed)",
   "markets": [
     "Tirupati",
     "Bengaluru",
     "Hyderabad"
   ],
   "location_mode": "Presence: people in or regularly in targeted locations",
-  "bidding": "Maximize conversions, without target CPA; account-default Phone call leads only",
+  "bidding": "Shared Maximize clicks portfolio: Tejesh | Shared Search Calls | ₹127.11; account-default Phone call leads only",
   "network": "Google Search; initially exclude Display and Search Partners",
   "launch_scope": "Eight separate service Search campaigns; 24 ad groups; 496 exact and phrase keywords; 24 responsive search ads",
-  "conversion_primary": "Calls from ads: Primary, minimum 60 seconds, One conversion per ad interaction; Business profile - Tracked call is Google-managed. Call reporting enabled.",
+  "conversion_primary": "Calls from ads: Primary, minimum 60 seconds, One conversion per ad interaction; Business profile - Tracked call is Google-managed. Call reporting enabled. New Calls from website | 60s action: Primary, One, 60 seconds, 30-day window; code prepared but live tag deployment pending.",
   "conversion_secondary": [
     "Website phone clicks",
     "Form enquiries",
@@ -21,8 +21,9 @@
   ],
   "launch_dependencies": [
     "Real traffic is needed to verify completed calls and assess performance",
-    "User requested Octaleads MCC invitation remain pending",
-    "Tax form left unchanged at latest user request"
+    "Tax form left unchanged at latest user request",
+    "Publish website call tracking to the existing live Vercel project, then verify the tag and real call reporting",
+    "Owner must complete advertiser verification by 14 November 2026"
   ],
   "competitor_research": [
     {
@@ -54,12 +55,12 @@
   "mcc": {
     "id": "506-089-4911",
     "name": "Octaleads",
-    "status": "Invitation sent; user explicitly requested leaving it pending"
+    "status": "Account accessible through Octaleads MCC on 16 October 2026"
   },
   "daily_budget_gross_max_inr": 300,
   "average_daily_budget_net_inr": 127.11,
-  "budget_note": "Combined eight-campaign average net daily budgets total INR 127.11. 2 x 127.11 x 1.18 = INR 299.98. The uPVC Windows campaign is held on 13 October because Google retains the higher earlier budget as that day\u2019s ceiling. One-time rule 62171715 resumes it on 14 October between 09:00 and 10:00 IST.",
-  "ad_schedule": "Monday to Saturday 09:30\u201322:30 Asia/Kolkata, based on verified Google Business Profile hours. Sunday closed.",
+  "budget_note": "One shared INR 127.11 average daily budget across all eight campaigns, linked to one common Maximize clicks portfolio. Total unchanged. Former individual split 40/20/20/12/15/8/7/5.11 retired 16 October.",
+  "ad_schedule": "Monday to Saturday 09:30–22:30 Asia/Kolkata, based on verified Google Business Profile hours. Sunday closed.",
   "clarity": {
     "project_id": "yx070si4fg",
     "masking": "Strict",
@@ -177,5 +178,7 @@
       "average_daily_budget_net_inr": 5.11,
       "landing_page": "https://tejeshprofine.com/landing/maintenance"
     }
-  ]
+  ],
+  "last_reviewed_on": "2026-10-16",
+  "advertiser_verification_due": "2026-11-14"
 }

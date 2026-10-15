@@ -5,11 +5,11 @@ function load() {
   process.env.REACT_APP_GA4_ID = 'G-TEST123';
   process.env.REACT_APP_CLARITY_ID = 'test123';
   process.env.REACT_APP_GOOGLE_ADS_ID = 'AW-123456';
-  process.env.REACT_APP_ADS_LEAD_LABEL = 'testLabel';
+  process.env.REACT_APP_GOOGLE_ADS_WEBSITE_CALL_LABEL = 'testCallLabel';
   return require('./analytics');
 }
 beforeEach(() => { document.head.innerHTML = ''; delete window.dataLayer; delete window.clarity; localStorage.clear(); window.history.replaceState({}, '', '/'); });
-afterEach(() => { ['TRACKING_ENABLED','SITE_URL','GA4_ID','CLARITY_ID','GOOGLE_ADS_ID','ADS_LEAD_LABEL'].forEach(key => delete process.env[`REACT_APP_${key}`]); });
+afterEach(() => { ['TRACKING_ENABLED','SITE_URL','GA4_ID','CLARITY_ID','GOOGLE_ADS_ID','GOOGLE_ADS_WEBSITE_CALL_LABEL'].forEach(key => delete process.env[`REACT_APP_${key}`]); });
 test('no third-party scripts or events before permission', () => {
   const a = load(); a.applyConsent(null); a.trackContact('generate_lead');
   expect(document.querySelectorAll('script')).toHaveLength(0); expect(window.dataLayer).toBeUndefined();
@@ -28,6 +28,19 @@ test('contact intent and form enquiries never count as completed Ads calls', () 
   const a = load(); a.applyConsent({ analytics: true, advertising: true });
   a.trackContact('whatsapp_form_open'); a.trackContact('phone_click'); a.trackContact('generate_lead');
   expect(window.dataLayer.map(args => Array.from(args)).filter(c => c[1] === 'conversion')).toEqual([]);
+});
+test('website call measurement requires Ads consent and restores the business number on withdrawal', () => {
+  const a = load(); document.body.innerHTML = '<a href="tel:+919949360406">Call Now</a>';
+  a.applyConsent({ analytics: true, advertising: false });
+  expect(window.dataLayer.some(c => c[1] === 'AW-123456/testCallLabel')).toBe(false);
+  a.applyConsent({ analytics: true, advertising: true });
+  const config = window.dataLayer.find(c => c[1] === 'AW-123456/testCallLabel');
+  expect(config[2].phone_conversion_number).toBe('+91 9949360406');
+  config[2].phone_conversion_callback('1800 123 4567', '18001234567');
+  expect(document.querySelector('a').getAttribute('href')).toBe('tel:+18001234567');
+  a.applyConsent({ analytics: true, advertising: false });
+  expect(document.querySelector('a').getAttribute('href')).toBe('tel:+919949360406');
+  document.body.innerHTML = '';
 });
 test('production integration stays off on other hosts and rejects stale consent', () => {
   const a = load(); process.env.REACT_APP_SITE_URL = 'https://tejeshprofine.com';

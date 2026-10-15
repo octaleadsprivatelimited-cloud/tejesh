@@ -1,12 +1,17 @@
 import site from './data/site.json';
 import { getPageSEO, normalizePath, pagePaths } from './seo';
 import landings from './data/landingPages.json';
+import { createWebsiteCalls } from './websiteCalls';
 
 const consentKey = 'tejesh-consent-v1';
 const denied = { analytics: false, advertising: false };
 const gaId = process.env.REACT_APP_GA4_ID || '';
 const clarityId = process.env.REACT_APP_CLARITY_ID || '';
-const adsId = process.env.REACT_APP_GOOGLE_ADS_ID || '';
+// Verified public identifiers from Ads account 168-183-2284. An empty override disables Ads.
+const adsId = process.env.REACT_APP_GOOGLE_ADS_ID ?? 'AW-18510402042';
+const websiteCallLabel = process.env.REACT_APP_GOOGLE_ADS_WEBSITE_CALL_LABEL ?? 'nMcCCPj-jJ4dEPqjufpE';
+const validWebsiteCallLabel = /^[A-Za-z0-9_-]+$/.test(websiteCallLabel);
+let websiteCalls;
 const validGa = /^G-[A-Z0-9]+$/.test(gaId);
 const validClarity = /^[a-z0-9]+$/.test(clarityId);
 const validAds = /^AW-\d+$/.test(adsId);
@@ -82,6 +87,10 @@ export function applyConsent(value) {
   if (googleStarted && active.advertising && validAds && !adsConfigured) {
     gtag('config', adsId, { send_page_view: false, allow_ad_personalization_signals: false, page_location: measurementUrl(window.location.pathname), page_referrer: referringOrigin() }); adsConfigured = true;
   }
+  if (googleStarted && active.advertising && validAds && validWebsiteCallLabel) {
+    websiteCalls = websiteCalls || createWebsiteCalls(window, `${adsId}/${websiteCallLabel}`, gtag);
+    websiteCalls.start();
+  } else websiteCalls?.stop();
   if (active.analytics && validClarity && !clarityStarted) {
     window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
     window.clarity('consentv2', { analytics_Storage: 'granted', ad_Storage: active.advertising ? 'granted' : 'denied' });
