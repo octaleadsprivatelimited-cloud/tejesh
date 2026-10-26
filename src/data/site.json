@@ -196,6 +196,12 @@
       "title": "Windows & Doors Project Quotes | Tejesh Profine",
       "description": "Compare uPVC windows, aluminium doors and installation for Tirupati, Bengaluru and Hyderabad projects. Call +91 9949360406 to discuss a quotation.",
       "keywords": "uPVC windows Tirupati, aluminium doors Bangalore, windows doors Hyderabad, window installation quote"
+    },
+    "/landing/interior-design": {
+      "component": "ServiceLanding",
+      "title": "Interior Design in Tirupati & Renigunta | Tejesh Profine",
+      "description": "Call Tejesh Profine on +91 9949360406 for interior design enquiries in Tirupati and Renigunta. Discuss your space, style, budget and project scope.",
+      "keywords": "interior design Tirupati, interior designers Renigunta, interior design consultation Tirupati"
     }
   },
   "formspreeEndpoint": "https://formspree.io/f/maeqdgzb",

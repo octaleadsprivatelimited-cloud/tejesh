@@ -43,6 +43,6 @@ export function getPageSEO(pathname) {
     url, provider: { '@id': businessId }, areaServed: { '@type': 'AdministrativeArea', name: 'Andhra Pradesh' } });
   if (path.startsWith('/landing/') && service?.faq?.length) graph.push({ '@type': 'FAQPage', '@id': `${url}#questions`, mainEntity: service.faq.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) });
   return { title, description, keywords: route?.keywords || article?.category || '', url, image,
-    imageAlt: article?.title || (service ? `${service.title} collection reference` : 'Tejesh Profine windows and doors'), article, noindex: missing,
+    imageAlt: article?.title || service?.imageAlt || (service ? `${service.title} collection reference` : 'Tejesh Profine windows and doors'), article, noindex: missing,
     schema: { '@context': 'https://schema.org', '@graph': graph } };
 }
