@@ -36,3 +36,5 @@ yarn-error.log*
 /public/icons/
 
 /marketing/*.png
+.vercel
+.env*
